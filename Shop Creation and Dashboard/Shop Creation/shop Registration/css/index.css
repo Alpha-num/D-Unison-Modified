@@ -180,19 +180,7 @@ li a {
 
     color: #6F6C90;
 }
-span.dot{
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    
-}
-span.dot-active{
-    background-color: #0D6EFD;
-}
-span.dot-inactive{
-    background-color: #7C8188;
-}
+
 
 .profile-icon{
     position:absolute;
@@ -238,3 +226,21 @@ span.dot-inactive{
     padding-left: 10px;
     padding-right: 10px;
 }
+
+input[type="radio"] {
+    display: none; /* Hide the actual radio buttons */
+  }
+  
+  /* Radio button labels */
+  input[type="radio"] + label {
+    display: inline-block;
+    padding: 0.3rem;
+    background-color: #7C8188; /* Default background color for inactive state */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Radio button labels - Active state */
+  input[type="radio"]:checked + label {
+    background-color: #0D6EFD; /* Background color for active state */
+  }

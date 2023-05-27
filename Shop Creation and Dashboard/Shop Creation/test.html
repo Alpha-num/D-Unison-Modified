@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Radio buttons */
+input[type="radio"] {
+  display: none; /* Hide the actual radio buttons */
+}
+
+/* Radio button labels */
+input[type="radio"] + label {
+  display: inline-block;
+  padding: 0.3rem;
+  background-color: #7C8188; /* Default background color for inactive state */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Radio button labels - Active state */
+input[type="radio"]:checked + label {
+  background-color: #0D6EFD; /* Background color for active state */
+}
+
+    </style>
+
+</head>
+<body>
+<!--
+    <div class="mb-3 container d-flex justify-content-end w-100">
+        <div class="payment-type">
+          <div class="container">
+            <input type="radio" name="payment" id="paystack" class="me-4" checked>
+            <label for="paystack"> </label> <img src="assets/images/paystack.png" class="img-fluid">
+            <span>Paystack</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mb-3 container d-flex justify-content-end w-100">
+        <div class="payment-type">
+          <div class="container">
+            <input type="radio" name="payment" id="flutterwave" class="me-4">
+            <label for="flutterwave"> </label> <img src="assets/images/flutterwave.png" class="img-fluid">
+            <span>Flutterwave</span>
+          </div>
+        </div>
+      </div>
+      
+    -->
+
+    <div class="mb-3 container d-flex justify-content-end w-100">
+        <div class="payment-type">
+          <div class="container">
+            <input type="radio" name="payment" id="paystack" class="me-4" checked>
+            <label for="paystack">  </label> <img src="assets/images/paystack.png" class="img-fluid">
+            <span class="payment-label">Paystack</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mb-3 container d-flex justify-content-end w-100">
+        <div class="payment-type">
+          <div class="container">
+            <input type="radio" name="payment" id="flutterwave" class="me-4">
+            <label for="flutterwave"></label> <img src="assets/images/flutterwave.png" class="img-fluid">
+            <span class="payment-label">Flutterwave</span>
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>
