@@ -1,0 +1,234 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('../assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  
+  /* You can also add other font weights and styles here */
+}
+
+@font-face {
+  font-family: 'Poppins Bold';
+  src: url('../assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+  
+  /* You can also add other font weights and styles here */
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  /* You can also add other font weights and styles here */
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter/Inter-Regular.ttf') format('truetype');
+  /* You can also add other font weights and styles here */
+}
+
+
+*{
+    box-sizing: border-box;
+}
+#page-content{
+    background-color: #f7f7f7 !important;
+    
+
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+    font-size: 16px;
+    
+}
+
+.table-text{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height */
+
+
+color: #000000;
+}
+/* Utilities defined here  */
+
+.text-small-bold{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+/* identical to box height */
+
+}
+
+a.list-group-item:hover{
+    background-color: #0D6EFD !important;
+    color:white !important;
+  }
+  .list-group-item:active{
+    background-color: #0D6EFD !important;
+  }
+  .list-group-item.active{
+    color: white !important;
+    background-color: #0D6EFD !important;
+  }
+  
+div.wrapper .form-control{
+  border: none !important ;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 200px;
+  padding: 5px;
+  font-size: 12px ;
+  font-weight: bold; 
+}
+
+.content{
+  margin-left: 20px;
+  width: 90%;
+}
+
+.income-text{
+  font-family: 'Poppins';
+  font-size: 15px;
+  font-weight: bold;
+}
+.amount{
+  font-family: 'Poppins Bold';
+  font-size: 20px;
+}
+.order-label{
+  font-weight: bold;
+  font-size: 19px; 
+  color:#2C3832;
+}
+.label1{
+  font-size: 15px;
+}
+.product-label{
+  font-family: 'quicksand';
+  font-size: 14px;
+}
+.growth-label{
+    font-family: 'Poppins Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 30px;
+    /* identical to box height */
+    color: #000000;
+    
+}
+#filter-input{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 17.5px;
+}
+#filter-input::placeholder{
+  color: #0D6EFD;
+}
+
+
+select{
+  -webkit-appearance: none;
+  border: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: none;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 200px;
+  padding: 9px ;
+  font-size: 12px ;
+}
+
+@media (max-width:700px){
+  #filter-input{
+    width: 250px;
+    
+  }
+  select{
+    margin-bottom: 15px;
+  }
+  .stats-item{
+   margin-top: 12px;
+  }
+  p.order-text{
+    margin-top: 20px; 
+  }
+  .filter-container{
+    justify-content: end;
+  }
+}
+@media (min-width:701px){
+  #filter-input{
+    width: 300px;
+  }
+  .filter-container{
+    justify-content: end;
+    padding-right: 40px;
+  }
+  .numbering-container{
+    justify-content: space-between;
+  }
+  .stats-container{
+    display: flex;
+    gap: 1rem;
+  }
+
+p.order-text{
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+  
+}
+.page-number-container{
+  display: flex;
+}
+div.page_number{
+  
+  font-size: 14px; 
+  text-align: center;
+  width: 19px;
+  height: 19px;
+  margin: 3px;
+  font-weight: bold; 
+  
+}
+div.page_number.active{
+  background: #0D6EFD;
+  border-radius: 3px;
+  color: white;
+}
+.counter span{
+  margin-right: 13px;
+  color: #0D6EFD;
+}
+.table-responsive{
+  margin-bottom: 100px;
+}
+
+.order-search-icon{
+  position:absolute;
+  left:  350px; 
+  top: 7px;
+}
+@media(min-width:700px){
+  .order-search-icon{
+    position:absolute;
+    left:  790px; 
+    top: 7px;
+  } 
+}
+#filter-input{
+    background-image: url('../assets/images/icons8-search.svg'); 
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-size: 24px;
+
+}

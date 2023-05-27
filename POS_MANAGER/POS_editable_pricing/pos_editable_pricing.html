@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>POS Editable pricing</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/base.css" rel="stylesheet" />
+        <link href="css/pos_editable_pricing.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper"> 
+            <!-- Sidebar--> 
+            <div class="border-end bg-white closed" id="sidebar-wrapper">
+                <div class="mb-3 sidebar-heading"><img src="assets/images/Groth-logo.png" class="img-fluid"/><span><img src="assets/images/Groth.png" class="img-fluid" /></span></div>
+                <div class="list-group list-group-flush mb-3">
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3" href="#!"><span class="m-3"><i class="bi bi-house"></i></span>Dashboard</a>
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3 link-active" href="#!"><span class="m-3"><i class="bi bi-graph-up-arrow"></i></span>POS</a>
+                                        <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3 " href="#!"><span class="m-3"><i class="bi bi-minecart"></i></span>Orders</a>
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3 " href="#!"><span class="m-3"><i class="bi bi-minecart"></i></span>Order Status</a>
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3" href="#!"><span class="m-3"><i class="bi bi-box"></i></span>Products</a>
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3" href="#!"><span class="m-3"><i class="bi bi-person"></i></span>Staffs</a>
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3" href="#!"><span class="m-3"><i class="bi bi-person"></i></span>Riders</a>
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3" href="#!"><span class="m-3"><i class="bi bi-cash"></i></span>Payment Gateway</a>
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3" href="#!"><span class="m-3"><i class="bi bi-file-earmark"></i></span>Pages</a>
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3" href="#!"><span class="m-3"><i class="bi bi-gear"></i></span>Settings</a>
+                    
+                
+                
+                </div>
+                <br />
+                <hr class="mt-4"/>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3" href="#!"><span class="m-3"><i class="bi bi-box-arrow-left"></i></span>Logout</a>
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light  border-bottom">
+                    <div class="container-fluid">
+                        <span class="navbar-toggler-icon" id="sidebarToggle"></span>
+                        <div>
+                            <p id="heading-text" class="mb-0">Welcome Manager James</p>
+                            <p id="date" class="mt-0">1 October 2022 |11:59 AM GMT </p>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                            
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                
+                                <div class="navbar-nav ms-auto me-4 d-flex align-item" style="overflow: hidden;">
+                                    <p class="growth-label me-5">Growth store</p>
+                                    <a href="#" class="nav-item nav-link active me-4"><span><i class="bi bi-chat-dots" style="font-size: 20px;"></i></span></a>
+                                    <a href="#" class="nav-item nav-link">
+                                        <i class="bi bi-bell notification" style="font-size: 20px; position: relative;"></i>
+                                        
+                                    </a>
+                                    <form class="d-flex">
+                                        <div class="input-group">
+                                          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                        <span class="search-icon"><i class="bi bi-search"  style="font-size: 20px;"></i></span>
+                                        </div>
+                                      </form>
+
+                                </div>
+                            </div>
+
+        
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="container" id="page-content">
+                   
+                    <div class="main-content my-2">
+                        <div class="search-container">
+                            <form class="d-flex my-1">
+                                <div class="input-group search-container position-relative">
+                                  <input class="form-control" type="text" placeholder="Search product or order" aria-label="Search">
+                                    <span class="product-search-icon"><i class="bi bi-search"  style="font-size: 17px;"></i></span>
+                                </div>
+                            </form>
+                            <span class="mx-2 pt-2 my-1"><i class="bi bi-calendar"></i></span>
+                                <span class="mx-2" style="font-size: 11px; padding-top: 15px;">October 18th 2002, 10:00AM</span>
+                                <div class="my-1">
+                                    <button class="btn bg-danger text-white">Dynamic Pricing Activated</button>
+                                </div>
+                        </div>
+                        <div class="section my-3"> 
+                        
+                            <div class="mini-menu" id="menu">
+                                <div class="d-flex flex-column mb-4">
+                                    <span class="mb-1 "><i class="bi bi-house text-primary m-3" style="font-size: 18px;"></i></span>
+                                    <span class="pt-0 mt-0 icon-text" style="position:relative; top:-10px;">Home</span>
+                                </div>
+                                <div class="d-flex flex-column mb-4">
+                                    <span class="mb-1 "><i class="bi bi-file-earmark-text text-primary m-3" style="font-size: 18px;"></i></span>
+                                    <span class="pt-0 mt-0 icon-text" style="position:relative; top:-10px;">Menu</span>
+                                </div>
+                                <div class="d-flex flex-column mb-4">
+                                    <span class="mb-1 "><i class="bi bi-credit-card m-3" style="font-size: 18px; -webkit-text-stroke: 1px; "></i></span>
+                                    <span class="pt-0 mt-0 icon-text" style="position:relative; top:-10px;" >Payment</span>
+                                </div>
+                                <div class="d-flex flex-column mb-4">
+                                    <span class="mb-1 "><i class="bi text-primary bi-border-all m-3" style="font-size: 18px;"></i></span>
+                                    <span class="pt-0 mt-0 icon-text" style="position:relative; top:-8px;">ORDERS</span>
+                                </div>
+                                <div class="d-flex flex-column mb-4">
+                                    <span class="mb-1 "><i class="bi text-primary bi-gear m-3" style="font-size: 18px;"></i></span>
+                                    <span class="pt-0 mt-0 icon-text" style="position:relative; top:-10px;">SETTINGS</span>
+                                </div>
+                            </div>
+                            <div class="content mx-4">
+                                <h4 class="my-1 d-flex"><span class="me-5 fw-bold">ORDER # - 123445</span> <span style="font-size: 15px; color: #D89F65;"><i class="bi bi-clock mx-1"></i>TIME: 20:02 PM</span></h4>
+                                <hr />
+                                <div class="table-responsive my-4">
+                                <table class="table table-hover table-borderless">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">ITEM</th>
+                                        <th scope="col">PRICE</th>
+                                        <th scope="col">QTY</th>
+                                        <th scope="col">SUBTOTAL</th>
+                                      
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">Chicken</th>
+                                        <td>$20.00</td>
+                                        <td>1</td>
+                                        <td>$20.00</td>
+                                        <td><i class="bi bi-trash-fill" style="color:#EC5A5A"></i></td>
+                                        
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">SUMMER SALAD</th>
+                                        <td>$10.00</td>
+                                        <td>1</td>
+                                        <td>$10.00</td>
+                                        <td><i class="bi bi-trash-fill" style="color:#EC5A5A"></i></td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">French Fries</th>
+                                        <td>$10.00</td>
+                                        <td>2</td>
+                                        <td>$10.00</td>
+                                        <td><i class="bi bi-trash-fill" data-toggle="modal" data-target="#exampleModalCenter" style="color:#EC5A5A"></i></td>
+                                      </tr>
+                                      
+                                      
+                                      
+                                    </tbody>
+                                 </table>
+                                 </div>
+                                 <div class="cancel-button-container ">
+                                    <button class="btn btn-danger " data-bs-toggle="modal" data-bs-target="#firstModal" id="cancel-order-button" style="width: 400px;">CANCEL ORDER</button>
+                                 </div>
+                            </div>
+        
+                        </div>
+
+                        
+                    </div>
+                    <div class="side-content">
+                        <h4 class="pay-label mt-2">PAYABLE AMOUNT</h4>
+                        <h4 class="d-flex"><span style="color: #D89F65;">$38, 50</span> <div class=" text-right flex-grow-1 text-end pe-4 small"><i class="bi bi-people-fill mx-1"></i><span style="font-size: 12px ;">Guess: 2</span></div></h4>
+                        <hr />
+                        <div class="d-flex justify-content-between pe-5">
+                            <span>DYNAMIC PRICE</span>
+                            <div style="background-color: #EAF0F0; border-radius: 12px; width: 70px; text-align: center;"><span>$</span><span class="ms-2 d-inline-block" style="font-size: 30px ;">5</span></div>
+                        </div>
+                        <hr />
+
+                        <div class="container d-flex justify-content-around my-4">
+                            <div class="payment-type d-flex flex-column"><i class="bi bi-cash-stack"></i>CASH</div>
+                            <div class="payment-type d-flex flex-column"><i class="bi bi-credit-card"></i>CARD</div>
+                            <div class="payment-type d-flex flex-column"><i class="bi bi-cash"></i> VOUCHER</div>
+
+                        </div>
+                        <div class="container d-flex justify-content-around fw-bold p-2" style="background-color:#EAF0F0 ;">
+                            <div class="mt-2">ADD CASH RECIEVED</div>
+                            <div class="fs-3">$45</div>
+                        </div>
+                        <div class="container-fluid p-3 fw-bold">
+                            <p class="small d-flex justify-content-between"><span>SUBTOTAL</span><span></span>$35.00</p>
+                            <p class="small d-flex justify-content-between"><span>SERVICE CHARGE 10%</span><span></span>$35.00</p>
+                            <p class="small d-flex justify-content-between"><span>SERVICE CHARGE 10%</span><span></span>$35.00</p>
+                            <hr />
+                            <p class="small mb-5 d-flex justify-content-between order-label" style="font-size: 18px ;"><span>TOTAL </span><span></span>$38, 50</p>
+
+                            <div class="text-center pay-now-container">
+                              <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#thirdModal">PAY NOW </button>
+                            </div>
+
+                          </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+               <!--CONFIRM CANCEL MODAL STARTS HERE-->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="firstModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+         
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-0">
+          <div style="max-height: 250px;" class="text-center mt-0">
+            <img src="assets/images/bell-photo.png" class="img-fluid" />
+          </div>
+          <p class="small text-center fw-bold">Notification</p>
+          <h3 class="text-center fw-bold">Confirm Cancel Order Pin by Manager</h3>
+          <div class="container text-center mt-3">
+            <span style="font-size: 30px" class =" mx-1">*</span>
+            <span style="font-size: 30px;" class = " mx-1">*</span>
+            <span style="font-size: 30px" class="mx-1">*</span>
+            <span style="font-size: 30px" class="mx-1">*</span>
+            
+          </div>
+          <div class="button-holder p-3">
+            <btn class="btn btn-lg btn-primary w-100" id="confirmBtn" style="border-radius: 20px ;">Confirm</btn>
+          </div>
+          <div class="button-holder1 p-3" style="margin-top: -5px;">
+            <btn class="btn btn-lg w-100" style="border-radius: 20px ; "data-bs-dismiss="modal">Go Back</btn>
+          </div>
+        </div>
+
+      
+      </div>
+    </div>
+  </div>
+  <!-- CONFIRM CANCEL MODAL ENDS HERE-->
+
+  
+  <!--ORDER CANCEL MODAL STARTS HERE--> 
+  <div class="modal fade" id="secondModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+         
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-0">
+          <div style="max-height: 250px;" class="text-center mt-0">
+            <img src="assets/images/bell-photo.png" class="img-fluid" />
+          </div>
+          <p class="small text-center fw-bold">Notification</p>
+          <h3 class="text-center fw-bold">Order Cancelled by Manager</h3>
+        
+          <div class="button-holder1 p-3" style="margin-top: -5px;">
+            <btn class="btn btn-lg w-100" style="border-radius: 20px ; "data-bs-dismiss="modal">Go Back</btn>
+          </div>
+        </div>
+
+      
+      </div>
+    </div>
+  </div>
+  
+  <!--ORDER CANCEL MODAL ENDS HERE-->
+
+<!--ORDER PLACED SUCCESSFULLY MODAL STARTS HERE-->
+<div class="modal fade" id="thirdModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+       
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body pt-0">
+        <div style="max-height: 300px;" class="mb-3 text-center mt-0">
+          <img src="assets/images/human-thumb.png" class="img-fluid" />
+        </div>
+         
+        <h3 class="text-center fw-bold my-5">ORDER PLACED SUCCESSFULLY</h3>
+      
+        <div class="button-holder3 text-center p-3" style="margin-top: -5px;">
+          <btn class="btn btn-primary" data-bs-dismiss="modal">PRINT RECIEPT</btn>
+        </div>
+      </div>
+
+    
+    </div>
+  </div>
+</div>
+
+
+<!--ORDER PLACED SUCCESSFULLY MODAL ENDS HERE-->
+
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="js/base.js"></script>
+    </body>
+</html>

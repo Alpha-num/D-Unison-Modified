@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'quicksand';
+    src: url('../assets/fonts/quicksand/Quicksand-Medium.ttf') format('truetype');
+    
+    /* You can also add other font weights and styles here */
+  }
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter/Inter-Regular.ttf') format('truetype');
+    
+    /* You can also add other font weights and styles here */
+  }
+  
+
+*{
+    box-sizing: border-box;
+}
+#page-content{
+    height: 700px;
+    
+
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'quicksand';
+    
+}
+
+#page-content{
+  padding-top: 15px;
+  background-color: #f7f7f7;
+}
+
+
+a.list-group-item:hover{
+    background-color: #0D6EFD !important;
+    color:white !important;
+  }
+  .list-group-item:active{
+    background-color: #0D6EFD !important;
+  }
+  .list-group-item.active{
+    color: white !important;
+    background-color: #0D6EFD !important;
+  }
+  
+  .growth-label{
+    font-family: 'Poppins Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 30px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.item{
+  background: #C2C7CE;
+  border-radius: 9px;
+  margin: 12px;
+  padding: 5px;
+}
+
+.main-section{
+  background-color: #ffffff;
+  padding: 10px;  
+  height: 350px;
+  
+  
+}
+
+
+.option-container span{
+  font-family: 'Inter';
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 12px;
+  margin-top: 5px ;
+  
+}
+@media (max-width:600px){
+  .main-section{
+    width:95%;
+    
+  }
+}
+
+
+@media (min-width:767px){
+  .main-section{
+    display:flex;
+    max-width: 80%;
+    flex-wrap: wrap;
+    min-width: 600px;
+  } 
+.btn-holder{
+  flex: 3;
+}
+
+.option-container{
+  flex: 7;
+}
+.btn-holder .btn{
+  width: 150px;
+}
+
+
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Order Status</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/base.css" rel="stylesheet" />
+        <link href="css/index.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper"> 
+            <!-- Sidebar--> 
+            <div class="closed border-end bg-white closed" id="sidebar-wrapper">
+                <div class="mb-3 sidebar-heading"><img src="assets/images/Groth-logo.png" class="img-fluid"/><span><img src="assets/images/Groth.png" class="img-fluid" /></span></div>
+                <div class="list-group list-group-flush mb-3">
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3" href="#!"><span class="m-3"><i class="bi bi-house"></i></span>Dashboard</a>
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3 link-active" href="#!"><span class="m-3"><i class="bi bi-graph-up-arrow"></i></span>POS</a>
+                    <a class="list-group-item active list-group-item-action border-0 list-group-item-light p-3 link-active" href="#!"><span class="m-3"><i class="bi bi-minecart"></i></span>Orders</a>
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3 link-active" href="#!"><span class="m-3"><i class="bi bi-minecart"></i></span>Order Status</a>
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3" href="#!"><span class="m-3"><i class="bi bi-box"></i></span>Products</a>
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3" href="#!"><span class="m-3"><i class="bi bi-person"></i></span>Staffs</a>
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3" href="#!"><span class="m-3"><i class="bi bi-person"></i></span>Riders</a>
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3" href="#!"><span class="m-3"><i class="bi bi-cash"></i></span>Payment Gateway</a>
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3" href="#!"><span class="m-3"><i class="bi bi-file-earmark"></i></span>Pages</a>
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3" href="#!"><span class="m-3"><i class="bi bi-gear"></i></span>Settings</a>
+                
+                
+                </div>
+                <br />
+                <hr class="mt-4"/>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3" href="#!"><span class="m-3"><i class="bi bi-box-arrow-left"></i></span>Logout</a>
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light  border-bottom">
+                    <div class="container-fluid">
+                        <span class="navbar-toggler-icon" id="sidebarToggle"></span>
+                        <div>
+                            <p id="heading-text" class="mb-0">Welcome Manager James</p>
+                            <p id="date" class="mt-0">1 October 2022 |11:59 AM GMT </p>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                            
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                
+                                <div class="navbar-nav ms-auto me-4 d-flex align-item" style="overflow: hidden;">
+                                    <p class="growth-label me-5">Growth store</p>
+                                    <a href="#" class="nav-item nav-link active me-4"><span><i class="bi bi-chat-dots" style="font-size: 20px;"></i></span></a>
+                                    <a href="#" class="nav-item nav-link">
+                                        <i class="bi bi-bell notification" style="font-size: 20px; position: relative;"></i>
+                                        
+                                    </a>
+                                    <form class="d-flex">
+                                        <div class="input-group">
+                                          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                        <span class="search-icon"><i class="bi bi-search"  style="font-size: 20px;"></i></span>
+                                        </div>
+                                      </form>
+
+                                </div>
+                            </div>
+
+        
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="container mt-0" id="page-content" style="padding-left: 0;">
+                    
+                    <div class="content">
+
+                        <div class="container">
+
+                            <div class="py-3 stats-container">
+                                            
+                                <div class="bg-white border p-2" style="width: 255px;height: 105px; border-radius: 12px; border-color: #D1D1D1; position: relative;">
+                                    <p class="income-text">Today's Total Order</p>
+                                    
+                                        <span class="amount" style="position:absolute; bottom: 5px;">$600 </span>
+                                        <img style="width: 100px; position:absolute; bottom: 10px; right:0; margin-right: 8px;" src="assets/images/Vector6.png" />
+
+                                </div>
+                                
+                                <div class="position-relative p-2 bg-white border stats-item" style="width: 255px; height: 105px; border-radius: 12px; border-color: #D1D1D1;">
+                                    <p class="income-text">This Month Total Order </p>
+                                    
+                                        <span class="amount" style="position:absolute; bottom: 5px;">90,000</span>
+                                        <img style="width: 100px; position:absolute; bottom: 10px; right:0; margin-right: 8px;" src="assets/images/Vector7.png" />
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="container counter">
+                            <button class="btn btn-primary btn-sm">All</button>
+                            <span>Complete (300) </span> <span> Cancel (20)</span> <span>Pending(190)</span>
+                        </div>
+
+                        <p class="ms-3 fw-bold order-text" style="font-size: 20px;">Orders </p>
+                        
+                      <form>  
+                        <div class="d-flex mt-0 position-relative filter-container">
+                            
+                            <input class="form-control d-inline-block me-2" id="filter-input" type="search" placeholder="Order Id" />
+                            
+                            <button class="btn btn-primary" style="border-radius: 14px; width: 90px;">Filter</button>
+                        </div>
+                    </form>
+                        <div class="container-fluid mt-2 numbering-container d-flex flex-wrap">
+                            <div class="me-1 mx-1">
+                                <select name="pets" id="pet-select" class="me-1 ">
+                                    <option value="">Select Fulfillment</option>
+                                    <option value="dog">test</option>
+                                </select>
+                                <button class="btn btn-primary btn-sm ">Submit</button>
+                            </div>
+                            <div class="page-number-container">
+                                <div class="page_number active">1</div>
+                                <div class="page_number">2</div>
+                                <div class="page_number">3</div>
+                                <div class="page_number">4</div>
+                                <div class="page_number">5</div>
+                                <div class="page_number">6</div>
+                                <div class="page_number">7</div>
+                                <div class="page_number">8</div>
+                                <div class="page_number">9</div>
+                                <div class="page_number">10</div>
+                                
+                            </div>
+
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-borderless table-hover table-text">
+                                <thead>
+                                  <tr class="table-secondary ">
+                                    <th scope="col"> <input class="form-check-input" type="checkbox"value="option1"></th>
+                                    <th scope="col">ORDER</th>
+                                    <th scope="col">DATE</th>
+                                    <th scope="col">CUSTOMER</th>
+                                    <th scope="col">TOTAL</th>
+                                    <th scope="col">PAYMENT</th>
+                                    <th scope="col">FULFILLMENT</th>
+                                    <th scope="col">TYPE</th>
+                                    <th scope="col">ITEM(S)</th>
+                                    <th scope="col">PRINT</th>
+                                    
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td scope="row"><input class="form-check-input" type="checkbox"value="option1"></th>
+                                    <td>098765</td>
+                                    <td>14T-APRIL-2023</td>
+                                    <td>Guest User</td>
+                                    <td>52,000</td>
+                                    <td>Complete</td>
+                                    <td>Complete</td>
+                                    <td>Pickup</td>
+                                    <td>4</td>
+                                    <td><button class="btn btn-primary btn-sm">Print</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row"><input class="form-check-input" type="checkbox"value="option1"></th>
+                                    <td>098765</td>
+                                    <td>14T-APRIL-2023</td>
+                                    <td>Staff User</td>
+                                    <td>52,000</td>
+                                    <td>Complete</td>
+                                    <td>Complete</td>
+                                    <td>Pickup</td>
+                                    <td>4</td>
+                                    <td><button class="btn btn-primary btn-sm">Print</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row"><input class="form-check-input" type="checkbox"value="option1"></th>
+                                    <td>098765</td>
+                                    <td>14T-APRIL-2023</td>
+                                    <td>Guest User</td>
+                                    <td>52,000</td>
+                                    <td>Complete</td>
+                                    <td>Complete</td>
+                                    <td>Pickup</td>
+                                    <td>4</td>
+                                    <td><button class="btn btn-primary btn-sm">Print</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row"><input class="form-check-input" type="checkbox"value="option1"></th>
+                                    <td>098765</td>
+                                    <td>14T-APRIL-2023</td>
+                                    <td>Guest User</td>
+                                    <td>52,000</td>
+                                    <td>Complete</td>
+                                    <td>Complete</td>
+                                    <td>Pickup</td>
+                                    <td>4</td>
+                                    <td><button class="btn btn-primary btn-sm">Print</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row"><input class="form-check-input" type="checkbox"value="option1"></th>
+                                    <td>098765</td>
+                                    <td>14T-APRIL-2023</td>
+                                    <td>Guest User</td>
+                                    <td>52,000</td>
+                                    <td>Complete</td>
+                                    <td>Complete</td>
+                                    <td>Pickup</td>
+                                    <td>4</td>
+                                    <td><button class="btn btn-primary btn-sm">Print</button></td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row"><input class="form-check-input" type="checkbox"value="option1"></th>
+                                    <td>098765</td>
+                                    <td>14T-APRIL-2023</td>
+                                    <td>Guest User</td>
+                                    <td>52,000</td>
+                                    <td>Complete</td>
+                                    <td>Complete</td>
+                                    <td>Pickup</td>
+                                    <td>4</td>
+                                    <td><button class="btn btn-primary btn-sm">Print</button></td>
+                                  </tr>
+                                  
+                                </tbody>
+                              </table>
+                        </div>
+
+
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+     
+
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        
+        
+    </body>
+</html>

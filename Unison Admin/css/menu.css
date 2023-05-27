@@ -1,0 +1,96 @@
+
+.frame {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+
+  }
+  .bottom-left {
+    position: absolute;
+    bottom: 15px;
+    left: 16px;
+  }
+  .centered {
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media (max-width: 767px) {
+    .frame{
+        width: 80%;
+    }
+  }
+
+.inbox-card{
+    font-family: 'Poppins';
+}
+.text-bold{
+    font-family: 'Poppins Bold';
+}
+.underline{
+    text-decoration: underline;
+}
+.recentStoresList a{
+    font-size: 12px;
+    font-family: 'Poppins Bold';
+    text-decoration: underline;
+}
+
+.title{
+    font-family: 'Poppins Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    
+    /* identical to box height */
+    
+}
+.number{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 1px;
+}
+
+#user-img{
+  cursor: pointer;
+}
+
+.user-menu{
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  width: 320px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 5%;
+  top: 80%; 
+  z-index: 1;
+  opacity: 0;
+  transition: all 300ms ease-in;
+}
+
+.user-menu a{
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  border-bottom: 1px solid #DFE0EB;
+  font-family: 'Poppins';
+  color: black;
+
+}
+.user-menu a:hover{
+  margin-top: 5px;
+  font-weight: bold;
+}
+.show-menu {
+  opacity: 1;
+  pointer-events: none;
+  /* Additional styles if needed */
+}

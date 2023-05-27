@@ -1,0 +1,290 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter/Inter-Regular.ttf') format('truetype');
+  
+  /* You can also add other font weights and styles here */
+}
+
+
+*{
+  box-sizing: border-box;
+}
+.main-content{
+  flex:4;
+  /*min-width: 500px; */
+  
+
+  
+}
+.side-content{
+  flex: 6;
+  min-width: 300px;
+  background-color: white;
+  
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter';
+  font-size: 14px;
+
+}
+.growth-label{
+  font-family: 'Poppins Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 30px;
+  /* identical to box height */
+  color: #000000;
+}
+@media (max-width:599px){
+
+  .product-search-icon{
+      position:absolute;
+      left: 10px;
+      top: 5px;
+  }
+  
+  .search-container{
+      width: auto;
+      display: flex;
+      flex-wrap: wrap;
+  
+  }
+  
+  .mini-menu{
+      display:none;
+      transition: all 0.3s ease;
+  }
+  
+  .mini-menu.active {
+      display: block; /* show sidebar when active class is added */
+      transform: translateX(0); /* move sidebar into view */
+    }
+  /* fixing error */
+  .content{
+      max-width: 90%;
+      
+  }
+  .side-content{
+    padding: 10px ;
+    
+  }
+  .card{
+    margin: 4px; 
+  }
+  
+
+}
+.title{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+/* identical to box height */
+
+
+  color: #000000;
+}
+
+
+@media (min-width:600px) and (max-width:768px){
+  #page-content{
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+  }
+  .search-container{
+      display: flex ;
+      flex-wrap: wrap;
+  }
+  .cancel-button-container{
+      text-align: center ;
+  }
+  .mini-menu{
+      border-color: #EAF0F0 !important;
+      border-width:medium;
+  }
+  
+
+}
+@media (min-width:750px){
+  #page-content{
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      
+  }
+  .main-content .search-container .form-control{
+      background-color: #EAF0F0;
+      border-color: #EAF0F0;
+      width: 200px;
+  }
+  
+  .search-container{
+      display: flex ;
+      flex-wrap: wrap;
+  }
+  
+  .side-content{
+      margin-left: 12px;
+      border-left: 1px solid;
+      padding-left: 12px;
+      border-width: thin;
+      border-color: #EAF0F0;
+  }
+  .mini-menu{
+      border-color: #EAF0F0 !important;
+      border-width:medium;
+  }
+  .arrow{
+    margin-left: 40px;
+  }
+  
+  
+  
+
+}
+
+
+
+.product-search-icon{
+  position:absolute;
+  left: 170px;
+  top: 5px;
+  color: #89928E;
+  
+}
+div.input-group input[type="text"]::placeholder{
+  font-family: 'Poppins';
+  color: #89928E;
+  font-size: 12px;
+}
+
+.section{
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+}
+.mini-menu{
+  flex-grow:2;
+  border-right: 0.5px solid #0D6EFD;
+  max-width: 80px; 
+  padding: 2px;
+}
+
+
+.flex-column span.icon-text{
+  font-size: 12px  !important;
+  margin-left: 9px;
+  
+}
+
+
+
+
+.aside{
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  height: 70%; 
+}
+
+.file-upload{
+width: 95%;
+height: 163px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.custom-form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.custom-form-group label {
+  margin-bottom: 5px;
+}
+select{
+  width: 95%; 
+  height: 40px;
+  left: 742px;
+  top: 1062px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 5px;
+
+}
+input[type="text"], textarea{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+
+}
+input[type="text"]::placeholder{
+  font-size: 14px ;
+  font-family: Inter;
+}
+.content{
+  width: 100%;
+}
+
+p.title + p {
+  font-size: 13px;
+}
+
+.content{
+  
+  height: 1200px ;
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 15px;
+  padding-left: 40px;
+}
+.item1{
+  
+  flex: 3;
+}
+.item2{
+  
+  flex: 5;
+}
+.item3{
+  
+  flex: 4;
+}
+.item4{
+  
+  flex: 3;
+}
+.item5{
+  flex:3;
+}
+@media (max-width:599px){
+  .content{
+    padding: 0;
+    margin: 0;
+  }
+  #page-content{
+    display: flex;
+  }
+  .item{
+    padding-left: 10px;
+  }
+
+}
+

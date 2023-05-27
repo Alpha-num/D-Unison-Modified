@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 30px;
+}
+
+.grid-1{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.grid-1-1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.grid-1-1 i{
+    font-size: 30px;
+    color: #585858;
+}
+
+.grid-1-1-child{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.grid-1-1-child p{
+    color: #6B72D6;
+    font-size: 20px;
+}
+
+.grid-1-2{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-1-2 h4{
+    color: #585858;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.order-item{
+    display: flex;
+    color: #585858;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.order-item img{
+    width: 65px;
+    height: 65px;
+}
+
+.order-item-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.order-item-child section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-item-child i{
+    font-size: 24px;
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 1px;
+}
+
+.controls i{
+    padding: 5px;
+    background-color: #EDEEF0;
+    font-size: 24px;
+}
+
+.grid-1-3{
+    margin-left: 60px;
+}
+
+.coupon-label{
+    color: #585858;
+    font-size: 15px;
+}
+
+.coupon-code{
+    display: flex;
+    gap: 20px;
+}
+
+.coupon-code input{
+    width: 270px;
+    background: #f9f9f9;
+    border: 1px solid #e3e3e3;
+    padding: 7px;
+    outline: none;
+    border-radius: 4px;
+}
+
+.coupon-code button{
+    padding: 10px;
+    color: #6B72D6;
+    background: #fff;
+    border: 1.4px solid #6B72D6;
+    border-radius: 4px;
+    width: 106px;
+}
+
+.sub-total{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(60, 66, 87, 0.12);;
+    color: #6C6C6C;
+}
+
+.sales-tax{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(60, 66, 87, 0.12);;
+    color: #6C6C6C;
+}
+
+.shipping-fee{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(60, 66, 87, 0.12);;
+    color: #6C6C6C;
+}
+
+.free{
+    color: green;
+}
+
+.total-due{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #6C6C6C;
+}
+
+.total-fee{
+    color: #6B72D6;
+}
+
+.grid-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FCFCFC;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+
+
+
+.active{
+    color: #6B72D6;
+}
+
+.icon1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon1 i{
+    font-size: 19px;
+}
+
+.line{
+    width: 25px;
+    height: 1px;
+    border-top: 1px solid #CCCCCC;
+}
+
+.contact-details-container{
+    background-color: #fff;
+    padding: 20px;
+    color: #585858;
+}
+
+.contact-details-container h4{
+    color: 585858;
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.first-name{
+    display: flex;
+    gap: 30px;
+}
+
+.first-name input{
+    padding: 8px;
+    border: 1px solid rgba(60, 66, 87, 0.12);
+    outline: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Roboto';
+}
+
+.first-name label{
+    display: block;
+}
+
+#email{
+    padding: 8px;
+    border: 1px solid rgba(60, 66, 87, 0.12);
+    outline: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Roboto';
+}
+
+
+.email-l{
+    margin-top: 20px;
+}
+
+.phone-number{
+    margin-top: 20px;
+}
+
+.phone-number label{
+    display: block;
+}
+
+.phone-number select{
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 4px;
+    border: 1px solid rgba(60, 66, 87, 0.12);
+    outline: none;
+}
+
+.phone-number input{
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 4px;
+    border: 1px solid rgba(60, 66, 87, 0.12);
+    outline: none;
+    width: 80%;
+}
+
+.contact-details-container-2{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 50px;
+    width: 65%;
+    gap: 10px;
+    color: #585858;
+}
+
+.contact-details-container-2 h4{
+    color: 585858;
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.contact-details-container-2 input{
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 4px;
+    border: 1px solid rgba(60, 66, 87, 0.12);
+    outline: none;
+}
+
+.city-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.city-div label{
+    display: block;
+}
+
+.shipping-check{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.shipping-check input{
+    background-color: #6B72D6;
+}
+
+.continue-button{
+    display: flex;
+    justify-content: end;
+}
+
+.continue-button button{
+    padding: 12px;
+    background-color: #6B72D6;
+    border: none;
+    color: #fff;
+    width: 136px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.delivery-steps{
+    display: flex;
+    width: 65%;
+    align-items: center;
+    color: #CCCCCC;
+    font-size: 22px;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+@media all and (max-width: 668px){
+
+    .parent-div{
+        padding-right: 20px;
+    }
+
+    .grid{
+        grid-template-columns: 100%;
+        gap: 0;
+    }
+
+    .grid-1-2{
+        margin-left: 10px;
+    }
+
+    .grid-1{
+        padding-top: 50px;
+        padding-left: 20px;
+    }
+
+    .grid-1-2{
+        margin-left: 0px;
+    }
+
+    .grid-1-3{
+        margin-left: 0px;
+    }
+
+    .delivery-steps{
+        display: none;
+    }
+ 
+
+    .first-name{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .first-name-1 input{
+        width: 100%;
+    }
+
+    .grid-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        padding-right: 0px;
+    }
+
+    .contact-details-container{
+        background-color: #fff;
+        padding: 20px;
+        color: #585858;
+        width: 100%;
+    }
+
+    .phone-number{
+        width: 100%;
+    }
+
+    .phone-number input{
+        width: 70%;
+    }
+    
+    .contact-details-container-2{
+        width: 100%;
+    }
+
+    .city-div{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .city-div input{
+        width: 100%;
+    }
+
+}

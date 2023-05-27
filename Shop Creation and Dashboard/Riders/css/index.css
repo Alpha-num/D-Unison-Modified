@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'quicksand';
+    src: url('../assets/fonts/quicksand/Quicksand-Medium.ttf') format('truetype');
+    
+    /* You can also add other font weights and styles here */
+  }
+
+
+*{
+    box-sizing: border-box;
+}
+#page-content{
+    background-color: #f7f7f7 !important;
+    height: 700px;
+    
+
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'quicksand';
+    
+}
+
+
+a.list-group-item:hover{
+    background-color: #0D6EFD !important;
+    color:white !important;
+  }
+  .list-group-item:active{
+    background-color: #0D6EFD !important;
+  }
+  .list-group-item.active{
+    color: white !important;
+    background-color: #0D6EFD !important;
+  }
+  
+  .growth-label{
+    font-family: 'Poppins Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 30px;
+    /* identical to box height */
+    color: #000000;
+}
+
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: none;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 200px;
+  padding: 5px;
+  font-size: 12px ;
+}
+
+
+td, th {
+  text-align: center; 
+}
+
+.table {
+  overflow-y: auto;
+
+}
+.table-responsive{
+  height: 400px;
+  
+  background-color: white !important;
+}
+
+@media (min-width: 767px) {
+  .table-responsive {
+    width: 100%;
+  }
+  #page-content div.table-responsive {
+    background-color: blue ;
+  }
+  .table-responsive {
+    
+    width: 80%;
+     
+  }
+  
+}

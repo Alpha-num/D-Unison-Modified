@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    
+    /* You can also add other font weights and styles here */
+  }
+
+  @font-face {
+    font-family: 'Poppins Bold';
+    src: url('../assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+    
+    /* You can also add other font weights and styles here */
+  }
+
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    /* You can also add other font weights and styles here */
+  }
+  
+
+/* Default styles for larger screens */
+@media (min-width: 768px) {
+    #wrapper {
+      overflow-x: hidden;
+    }
+
+    #sidebarToggle{
+        display:none;
+    }
+    
+    #sidebar-wrapper {
+      min-height: 100vh;
+      margin-left: 0;
+      transition: margin 0.25s ease-out;
+      
+    }
+    
+    #sidebar-wrapper .sidebar-heading {
+      padding: 0.875rem 1.25rem;
+      font-size: 1.2rem;
+    }
+    
+    #sidebar-wrapper .list-group {
+      width: 15rem;
+    }
+    
+    #page-content-wrapper {
+      /*min-width: 100vw;*/
+      margin-left: 0px;
+      width: 100%;
+    }
+
+    /* #navbarSupportedContent {
+        display: block !important;
+    } */
+
+    div.input-group input[type="search"]{
+      width: 300px;
+    
+    }
+    form {
+      margin-right: auto;
+      margin-left: 30px;
+    }
+    
+
+    body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+
+  }
+  
+  /* Styles for smaller screens */
+  @media (max-width: 767px) {
+    #wrapper {
+      overflow-x: hidden;
+    }
+    
+    #sidebar-wrapper {
+      min-height: 100vh;
+      margin-left: -15rem;
+      transition: margin 0.25s ease-out;
+      
+    }
+    
+    #sidebar-wrapper .sidebar-heading {
+      padding: 0.875rem 1.25rem;
+      font-size: 1.2rem;
+    }
+    
+    #sidebar-wrapper .list-group {
+      width: 15rem;
+    }
+    
+    #page-content-wrapper {
+      min-width: 100vw;
+    }
+    
+    body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+      margin-left: 0;
+    }
+  }
+
+  #heading-text{
+    font-family: 'Poppins Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 30px;
+    /* identical to box height */
+    color: #000000;
+    
+  }
+  #date{
+    font-size: small;
+    font-family: 'Poppins';
+    font-style: normal;
+  }
+
+
+
+  a.list-group-item{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 15px;
+    padding-top: 0.10rem;
+    padding-bottom: 0.10rem;
+  }
+
+  
+.search-icon{
+  position:absolute;
+  left: 10px;
+  top: 5px;
+  
+}
+div.input-group input[type="search"]::placeholder{
+  font-family: 'Poppins Bold';
+  color: #000000;
+}
+div.input-group input[type="search"]{
+  text-indent: 20px;
+
+}
+
+.notification:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: red;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+}
+#page-content{
+  background-color: #F8F7FC;
+}

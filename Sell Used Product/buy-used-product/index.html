@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <title>Buy Used Products</title>
+  
+</head>
+<body>
+ <div class="page-wrapper">
+    <!--navbar starts here -->
+    <div class="navbar">
+        <div class="first-nav">
+         <div style="margin-right: 20px;">
+            <img src="./svg/logo.svg" alt="Logo" />
+         </div> 
+      
+          <div class="search-bar">
+            <input type="text" placeholder="Search" class="search-input" />
+            <select>
+              <option>State</option>
+            </select>
+            <button class="search-btn">Search</button>
+          </div>
+      
+          <div class="avatar-container">
+            <div class="avatar">
+              <a href="#">
+                <img src="./svg/Vector.png" alt="Profile" />
+                <span>Profile</span>
+              </a>
+            </div>
+      
+            <div class="avatar">
+              <a href="#">
+                <img src="./svg/message.png" alt="Message" />
+                <span>Message</span>
+              </a>
+            </div>
+      
+            <div class="avatar">
+              <a href="#">
+                <img src="./svg/heart.png" alt="Orders" />
+                <span>Orders</span>
+              </a>
+            </div>
+      
+            <div class="avatar">
+              <a href="#">
+                <img src="./svg/cart.png" alt="My Cart" />
+                <span>My Cart</span>
+              </a>
+            </div>
+          </div>
+        </div>
+    </div>
+      
+
+
+
+    <!--navbar ends here-->
+    
+      <div class="second-nav">
+        <div>
+              <a> <img src="svg/menu.png"/> </a>
+              <a> Home </a>
+              <a> About Us </a>
+              <a> Contact Us </a> 
+        </div>
+             <div>
+                  <select>
+                    <option> English, USD  </option>
+                </select>
+             </div>
+    </div>
+    <div class="main-content">
+        <div class="side-section">
+            <div class="grid-1">
+                <div class="grid-1-child">
+                        <a> Home &gt; Sell Used items </a>
+                
+                  </div>
+                <div class="grid-1-child-2">
+                    <div class="grid-1-child-2-head">
+                      <p><strong> State </strong></p>
+                      <a class="hide"> <img src="./svg/drop.png"/> </a>
+                    </div>
+                </div>
+                <div class="states">
+                      <p> Lagos </p>
+                      <p> Oyo </p>
+                      <p> Abuja </p>
+                      <p> Osun </p>
+                      <a class="see-all"> See All </a>
+                </div>
+                <div>
+                        <div class="grid-1-child-2-head">
+                          <p><strong> Price Range </strong></p>
+                          <a class="hide"> <img src="./svg/drop.png"/> </a>
+                        </div>
+                        <div class="wrapper">
+                                <div class="slider">
+                                  <div class="progress"></div>
+                                </div>
+                                <div class="range-input">
+                                  <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                                  <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                                </div>
+                          <div class="price-input">
+
+                                <div class="field">
+                                  <span>Min</span>
+                                  <input type="number" class="input-min" value="2500">
+                                </div>
+
+                                  <div class="field">
+                                    <span>Max</span>
+                                    <input type="number" class="input-max" value="7500">
+                                  </div>
+                                </div>
+
+                                
+                          
+                        </div>
+                        <div class="control--apply">
+                          <button> Apply </button>
+                        </div>
+
+                        <div class="section">
+                              <div class="grid-1-child-2-head">
+                                <p><strong> Condition </strong></p>
+                                <a class="hide"> <img src="./svg/drop.png"/> </a>
+                              </div>
+
+                             <div class="section--radio">
+                                    <input type="radio" value="Test" name="section--radio"/>
+                                    <span> Any </span>
+                             </div>
+
+                             <div class="section--radio">
+                              <input type="radio" value="Test" name="section--radio"/>
+                              <span> Refubished </span>
+                       </div>
+
+                       <div class="section--radio">
+                        <input type="radio" value="Test" name="section--radio"/>
+                        <span> Brand New </span>
+                 </div>
+
+                 <div class="section--radio">
+                  <input type="radio" value="Test" name="section--radio"/>
+                  <span> Old Item </span>
+           </div>
+
+                        </div>
+
+                        <div class="rating">
+                                  <div class="grid-1-child-2-head">
+                                    <p><strong> Rating </strong></p>
+                                    <a class="hide"> <img src="./svg/drop.png"/> </a>
+                                  </div>
+                            <div>
+                                  <div class="five-star">
+                                          <input type="checkbox"/>
+                                          <div> 
+                                                <img src="./svg/star.svg"/>
+                                                <img src="./svg/star.svg"/>
+                                                <img src="./svg/star.svg"/>
+                                                <img src="./svg/star.svg"/>
+                                                <img src="./svg/star.svg"/>  
+                                          </div>
+                                  </div>
+
+                                  <div class="five-star">
+                                    <input type="checkbox"/>
+                                    <div> 
+                                          <img src="./svg/star.svg"/>
+                                          <img src="./svg/star.svg"/>
+                                          <img src="./svg/star.svg"/>
+                                          <img src="./svg/star.svg"/>
+                                          <img src="./svg/star-empty.svg"/>  
+                                    </div>
+                            </div>
+
+                                  <div class="five-star">
+                                    <input type="checkbox"/>
+                                    <div> 
+                                          <img src="./svg/star.svg"/>
+                                          <img src="./svg/star.svg"/>
+                                          <img src="./svg/star.svg"/>
+                                          <img src="./svg/star-empty.svg"/>
+                                          <img src="./svg/star-empty.svg"/>  
+                                    </div>
+                            </div>
+
+                            <div class="five-star">
+                              <input type="checkbox"/>
+                              <div> 
+                                    <img src="./svg/star.svg"/>
+                                    <img src="./svg/star.svg"/>
+                                    <img src="./svg/star-empty.svg"/>
+                                    <img src="./svg/star-empty.svg"/>
+                                    <img src="./svg/star-empty.svg"/>  
+                              </div>
+                      </div>
+
+                      <div class="five-star">
+                        <input type="checkbox"/>
+                        <div> 
+                              <img src="./svg/star.svg"/>
+                              <img src="./svg/star-empty.svg"/>
+                              <img src="./svg/star-empty.svg"/>
+                              <img src="./svg/star-empty.svg"/>
+                              <img src="./svg/star-empty.svg"/>  
+                        </div>
+                </div>
+
+                            </div>      
+                   </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="main-section">
+            <div class="grid-2">
+
+                <div class="grid-2-child-1" style="display: flex; flex-wrap: wrap;">
+                      <p> 12,911 items in <strong> Used Items </strong> </p>
+
+                      <div class="grid-2-child-1-child">
+                            <input type="checkbox"/>
+                            <span> Verified Only </span>
+                            <select>
+                                    <option> Featured </option>
+                            </select>
+                            <div class="toggle-grid">
+                                  <img class="toggle-grid-1" src="./svg/toggle1.png"/>
+                                  <img class="toggle-grid-2" src="./svg/toggle2.png"/>
+                            </div>
+                      </div>
+                </div>
+
+                <div class="grid-2-child-2">
+                      <div>
+                              <img src="svg/phone1.png"/>
+                      </div>
+      
+                            <div class="product-text">
+                              <p class="prod-name"> Canon Cmera EOS 2000, Black 10x zoom </p>
+                                    <div>
+                                          <p> <strong class="price"> $998.00 </strong> <span class="canceled"> $1128.00 </span> </p>
+                                          <img src="svg/star.svg"/>
+                                          <img src="svg/star.svg"/>
+                                          <img src="svg/star.svg"/>
+                                          <img src="svg/star.svg"/>
+                                          <img src="svg/star-empty.svg"/>
+                                          <span class="rating-num"> 7.5 </span>
+                                          <span class="bullet"> &#x2022; </span>
+                                          <span class="order-num"> 154 orders </span>
+                                          <span class="bullet"> &#x2022; </span>
+                                          <span class="prod-status"> Used </span>
+                                    </div>
+                                  <p class="product-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia adipisci facilis sit odio aperiam voluptates corrupti veniam nulla minima.</p>
+                                  <a class="prod-details"> View details </a>  
+                            </div>
+
+                      <div>
+                          <img src="svg/heart2.png"/>
+                      </div>
+                </div>
+
+                <div class="grid-2-child-2">
+                  <div>
+                          <img src="svg/phone2.png"/>
+                  </div>
+  
+                        <div class="product-text">
+                          <p class="prod-name"> Canon Cmera EOS 2000, Black 10x zoom </p>
+                                <div>
+                                      <p> <strong class="price"> $998.00 </strong> <span class="canceled"> $1128.00 </span> </p>
+                                      <img src="svg/star.svg"/>
+                                      <img src="svg/star.svg"/>
+                                      <img src="svg/star.svg"/>
+                                      <img src="svg/star.svg"/>
+                                      <img src="svg/star-empty.svg"/>
+                                      <span class="rating-num"> 7.5 </span>
+                                      <span class="bullet"> &#x2022; </span>
+                                      <span class="order-num"> 154 orders </span>
+                                      <span class="bullet"> &#x2022; </span>
+                                      <span class="prod-status"> Used </span>
+                                </div>
+                              <p class="product-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia adipisci facilis sit odio aperiam voluptates corrupti veniam nulla minima.</p>
+                              <a class="prod-details"> View details </a>  
+                        </div>
+
+                  <div>
+                      <img src="svg/heart2.png"/>
+                  </div>
+            </div>
+
+            <div class="grid-2-child-2">
+              <div>
+                      <img src="svg/phone3.png"/>
+              </div>
+
+                    <div class="product-text">
+                      <p class="prod-name"> Canon Cmera EOS 2000, Black 10x zoom </p>
+                            <div>
+                                  <p> <strong class="price"> $998.00 </strong> <span class="canceled"> $1128.00 </span> </p>
+                                  <img src="svg/star.svg"/>
+                                  <img src="svg/star.svg"/>
+                                  <img src="svg/star.svg"/>
+                                  <img src="svg/star.svg"/>
+                                  <img src="svg/star-empty.svg"/>
+                                  <span class="rating-num"> 7.5 </span>
+                                  <span class="bullet"> &#x2022; </span>
+                                  <span class="order-num"> 154 orders </span>
+                                  <span class="bullet"> &#x2022; </span>
+                                  <span class="prod-status"> Used </span>
+                            </div>
+                          <p class="product-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia adipisci facilis sit odio aperiam voluptates corrupti veniam nulla minima.</p>
+                          <a class="prod-details"> View details </a>  
+                    </div>
+
+              <div>
+                  <img src="svg/heart2.png"/>
+              </div>
+        </div>
+
+        <div class="grid-2-child-2">
+          <div>
+                  <img src="svg/phone4.png"/>
+          </div>
+
+                <div class="product-text">
+                  <p class="prod-name"> Canon Cmera EOS 2000, Black 10x zoom </p>
+                        <div>
+                              <p> <strong class="price"> $998.00 </strong> <span class="canceled"> $1128.00 </span> </p>
+                              <img src="svg/star.svg"/>
+                              <img src="svg/star.svg"/>
+                              <img src="svg/star.svg"/>
+                              <img src="svg/star.svg"/>
+                              <img src="svg/star-empty.svg"/>
+                              <span class="rating-num"> 7.5 </span>
+                              <span class="bullet"> &#x2022; </span>
+                              <span class="order-num">    </span>
+                              <span class="bullet"> &#x2022; </span>
+                              <span class="prod-status"> Damaged </span>
+                        </div>
+                      <p class="product-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia adipisci facilis sit odio aperiam voluptates corrupti veniam nulla minima.</p>
+                      <a class="prod-details"> View details </a>  
+                </div>
+
+          <div>
+              <img src="svg/heart2.png"/>
+          </div>
+    </div>
+
+    <div class="grid-2-child-2">
+      <div>
+              <img src="svg/phone5.png"/>
+      </div>
+
+            <div class="product-text">
+              <p class="prod-name"> Canon Cmera EOS 2000, Black 10x zoom </p>
+                    <div>
+                          <p> <strong class="price"> $998.00 </strong> <span class="canceled"> $1128.00 </span> </p>
+                          <img src="svg/star.svg"/>
+                          <img src="svg/star.svg"/>
+                          <img src="svg/star.svg"/>
+                          <img src="svg/star.svg"/>
+                          <img src="svg/star-empty.svg"/>
+                          <span class="rating-num"> 7.5 </span>
+                          <span class="bullet"> &#x2022; </span>
+                          <span class="order-num"> 154 orders </span>
+                          <span class="bullet"> &#x2022; </span>
+                          <span class="prod-status"> Used </span>
+                    </div>
+                  <p class="product-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia adipisci facilis sit odio aperiam voluptates corrupti veniam nulla minima.</p>
+                  <a class="prod-details"> View details </a>  
+            </div>
+
+      <div>
+          <img src="svg/heart2.png"/>
+      </div>
+</div>
+
+<div class="grid-2-child-2">
+  <div>
+          <img src="svg/phone6.png"/>
+  </div>
+
+        <div class="product-text">
+          <p class="prod-name"> Canon Cmera EOS 2000, Black 10x zoom </p>
+                <div>
+                      <p> <strong class="price"> $998.00 </strong> <span class="canceled"> $1128.00 </span> </p>
+                      <img src="svg/star.svg"/>
+                      <img src="svg/star.svg"/>
+                      <img src="svg/star.svg"/>
+                      <img src="svg/star.svg"/>
+                      <img src="svg/star-empty.svg"/>
+                      <span class="rating-num"> 7.5 </span>
+                      <span class="bullet"> &#x2022; </span>
+                      <span class="order-num"> 154 orders </span>
+                      <span class="bullet"> &#x2022; </span>
+                      <span class="prod-status"> Used </span>
+                </div>
+              <p class="product-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia adipisci facilis sit odio aperiam voluptates corrupti veniam nulla minima.</p>
+              <a class="prod-details"> View details </a>  
+        </div>
+
+  <div>
+      <img src="svg/heart2.png"/>
+  </div>
+</div>
+
+<!--Pangination-->
+        
+              <div class="pangination">
+                    <select>
+                            <option>Show 10</option>
+                    </select>
+                    <div class="pangination-numbers">
+                          <button disabled>&lt;</button>
+                          <a class="active-pangination">1</a>
+                          <a>2</a>
+                          <a>3</a>
+                          <button>&gt;</button>
+                    </div>
+              </div>
+                
+        </div>
+        </div>
+    </div>
+    <div class="footer-1">
+        <h2> Suscribe on our newsletter </h2>
+        <p> get daily news on upcoming offers from many suppliers all over the world </p>
+        <div class="email-field">
+              <input type="text" placeholder="Email"/>
+              <button style="margin: 10px;"> Subscibe </button>
+        </div>
+</div>
+
+    <div class="footer-section">
+        <div class="footer container">
+            <div class="item item1">
+                <div class="footer-logo container ">
+                    <img src="svg/logo-small.png" class="img-fluid" />
+                    <p class="mt-4 ">Solution to Your Business is simply DUNISON</p>
+                    <div class="icons ">
+                        <span><img src="svg/facebook.png" class="img-fluid" /></span>
+                        <span><img src="svg/twitter.png" class="img-fluid" /></span>
+                        <span><img src="svg/linkedin.png" class="img-fluid" /> </span>
+                        <span><img src="svg/youtube.png" class="img-fluid" /></span>
+                        <span><img src="svg/insta.png" class="img-fluid" /></span>
+                    </div>
+                </div>
+            </div>
+            <div class="item item2">
+                <div class="container">
+                    <h3 class="title">About</h3> 
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Find Store</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item item3">
+                <div class="container">
+                    <h3 class="title">Partnership </h3> 
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Find Store</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item item4">
+                <div class="container">
+                    <h3 class="title">Information</h3> 
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Money Refund </a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item item5">
+                <div class="container">
+                    <h3 class="title">For Users</h3> 
+                    <ul>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">My Orders</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item item6">
+                <div class="container">
+                    <h3 class="title ms-2">About</h3> 
+                    <ul>
+                        <li class="ms-2"><a href="#">Get app</a></li>
+                    </ul>
+                    <div class="container d-flex flex-column my-2 m-0 p-0" style="display: flex; flex-direction: column;">
+                        <span>
+                            <img src="svg/google-play-badge.png" class="img-fluid" style="width: 130px;   height: auto;" />
+                        </span>
+                        <span style="margin-left: 7px;">
+                            <img src="svg/Download-On-The-App-Store-PNG-Transparent-Image.png"  class="img-fluid" style="width: 120px; height: auto;" />
+                        </span>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+        <div class="copyright container-fluid mb-2 p-4 d-flex justify-content-between">
+            <span class="ms-3"><i class="bi bi-c-circle"></i>2023 Dunison</span> <span class="me-3"><img src="svg/US@2x.png" /> English <span><i class="bi bi-chevron-up"></i></span>
+        </div>
+    </div>
+      
+ </div>
+
+ <!-- Modal starts here-->
+ <div class="modal fade" id="thirdModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+           
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body pt-0">
+            <div style="max-height: 300px;" class="mb-3 text-center mt-0">
+              <img src="assets/images/human-thumb.png" class="img-fluid" />
+            </div>
+             
+            <h3 class="text-center fw-bold my-5">You are about to buy from AKIN STORE</h3>
+          
+            <div class="button-holder3 text-center p-3" style="margin-top: -5px;">
+              <btn class="btn btn-primary" data-bs-dismiss="modal">PRINT RECIEPT</btn>
+            </div>
+          </div>
+    
+        
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+ <!--Modal Ends here-->
+      <script src="../bootstrap/js/bootstrap.min.js"></script>      
+</body>
+</html>  

@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter/Inter-Regular.ttf') format('truetype');
+    
+    /* You can also add other font weights and styles here */
+}
+
+  @font-face {
+    font-family: 'Inter Bold';
+    src: url('../assets/fonts/Inter/Inter-Bold.ttf') format('truetype');
+    
+    /* You can also add other font weights and styles here */
+}
+
+
+.wrapper {
+    height: 100vh;
+    width: 100% ;
+    background-color: #DADADA;
+  }
+body{
+  font-family: 'Inter';
+}
+
+  
+.login-label{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 97px;
+  color: #1E1E1E;
+}
+
+@media (max-width:600px){
+  .login-label{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 97px;
+    color: #1E1E1E;  
+  }
+  .wrapper{
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+  }  
+
+}
+
+.section{
+  height: auto;
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding-top: 25px;
+  padding: 5px ;
+}
+.title{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+color: #1E1E1E;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.left {
+  margin-left: 10px;
+  width: 50%;
+  margin-right: 10px;
+}
+
+.right {
+  width: 50%;
+  margin-left: 10px;
+  margin-right: 10px ;
+}
+form{
+  padding: 10px ;
+}
+
+.custom-input:focus {
+  outline: none;
+  border-color: #4c8bf5;
+  box-shadow: 0 0 5px rgba(76, 139, 245, 0.5);
+}
+@media(min-width:650px){
+  .frame{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+  .wrapper{
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+
+  }
+  .login-label-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex:6;
+    justify-content: center;
+    min-width: 400px;
+
+  }
+  .section{
+    flex: 4;
+    min-width: 400px;
+  }
+}
+.label-container{
+  flex: 1;
+}
+
+.section input{
+  padding: 10px ;
+  font-size: 13px;
+}

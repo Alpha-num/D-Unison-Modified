@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>POS PRODUCTS</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/base.css" rel="stylesheet" />
+        <link href="css/pos_products.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper"> 
+            <!-- Sidebar--> 
+            <div class="border-end bg-white closed" id="sidebar-wrapper">
+                <div class="mb-3 sidebar-heading"><img src="assets/images/Groth-logo.png" class="img-fluid"/><span><img src="assets/images/Groth.png" class="img-fluid" /></span></div>
+                <div class="list-group list-group-flush mb-3">
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3" href="#!"><span class="m-3"><i class="bi bi-house"></i></span>Dashboard</a>
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3 link-active" href="#!"><span class="m-3"><i class="bi bi-graph-up-arrow"></i></span>POS</a>
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3" href="#!"><span class="m-3"><i class="bi bi-minecart-loaded"></i></span>Orders</a>
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3" href="#!"><span class="m-3"><i class="bi bi-minecart-loaded"></i></span>Order Status</a>
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3 " href="#!"><span class="m-3"><i class="bi bi-box"></i></span>PRODUCTS</a>
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3" href="#!"><span class="m-3"><i class="bi bi-person-square"></i></span>STAFFS</a>
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3 " href="#!"><span class="m-3"><i class="bi bi-person-square"></i></span>RIDERS</a>
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3" href="#!"><span class="m-3"><i class="bi bi-cash"></i></span>Payment Gateway</a>
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3 " href="#!"><span class="m-3"><i class="bi bi-graph-up-arrow"></i></span>POS</a>
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3" href="#!"><span class="m-3"><i class="bi bi-file-earmark"></i></span>Pages</a>
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3 " href="#!"><span class="m-3"><i class="bi bi-gear-fill"></i></span>Settings</a>
+                    
+                    
+                
+                
+                </div>
+                <br />
+                <hr class="mt-4"/>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action border-0 list-group-item-light p-3" href="#!"><span class="m-3"><i class="bi bi-box-arrow-left"></i></span>Logout</a>
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light  border-bottom">
+                    <div class="container-fluid">
+                        <span class="navbar-toggler-icon" id="sidebarToggle"></span>
+                        <div>
+                            <p id="heading-text" class="mb-0">Welcome Manager James</p>
+                            <p id="date" class="mt-0">1 October 2022 |11:59 AM GMT </p>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                            
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                
+                                <div class="navbar-nav ms-auto me-4 d-flex align-item" style="overflow: hidden;">
+                                    <p class="growth-label me-5">Growth store</p>
+                                    <a href="#" class="nav-item nav-link active me-4"><span><i class="bi bi-chat-dots" style="font-size: 20px;"></i></span></a>
+                                    <a href="#" class="nav-item nav-link">
+                                        <i class="bi bi-bell notification" style="font-size: 20px; position: relative;"></i>
+                                        
+                                    </a>
+                                    <form class="d-flex">
+                                        <div class="input-group">
+                                          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                        <span class="search-icon"><i class="bi bi-search"  style="font-size: 20px;"></i></span>
+                                        </div>
+                                      </form>
+
+                                </div>
+                            </div>
+
+        
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="container" id="page-content">
+                   
+                    <div class="main-content my-2">
+                        <div class="search-container">
+                            <form class="d-flex my-1">
+                                <div class="input-group search-container position-relative">
+                                  <input class="form-control" type="text" placeholder="Search product or order" aria-label="Search">
+                                    <span class="product-search-icon"><i class="bi bi-search"  style="font-size: 17px;"></i></span>
+                                </div>
+                            </form>
+                            <span class="mx-2 pt-2 my-1"><i class="bi bi-calendar"></i></span>
+                                <span class="mx-2" style="font-size: 11px; padding-top: 15px;">October 18th 2002, 10:00AM</span>
+                                <div class="my-1">
+                                  <button class="btn" style="background-color: #B1CED4;"><span class="pe-1"><i class="bi bi-plus-circle"></i></span>New Order</button>
+                                </div>
+                        </div>
+                        <div class="section my-3"> 
+                        
+                            <div class="mini-menu" id="menu">
+                                <div class="d-flex flex-column mb-4">
+                                    <span class="mb-1 "><i class="bi bi-house text-primary m-3" style="font-size: 18px;"></i></span>
+                                    <span class="pt-0 mt-0 icon-text" style="position:relative; top:-10px;">Home</span>
+                                </div>
+                                <div class="d-flex flex-column mb-4">
+                                    <span class="mb-1 "><i class="bi bi-file-earmark-text m-3" style="font-size: 18px; -webkit-text-stroke: 1px;"></i></span>
+                                    <span class="pt-0 mt-0 icon-text" style="position:relative; top:-10px;">Menu</span>
+                                </div>
+                                <div class="d-flex flex-column mb-4">
+                                    <span class="mb-1 "><i class="bi bi-credit-card text-primary m-3" style="font-size: 18px;"></i></span>
+                                    <span class="pt-0 mt-0 icon-text" style="position:relative; top:-10px;" >Payment</span>
+                                </div>
+                                <div class="d-flex flex-column mb-4">
+                                    <span class="mb-1 "><i class="bi text-primary bi-border-all m-3" style="font-size: 18px;"></i></span>
+                                    <span class="pt-0 mt-0 icon-text" style="position:relative; top:-8px;">ORDERS</span>
+                                </div>
+                                <div class="d-flex flex-column mb-4">
+                                    <span class="mb-1 "><i class="bi text-primary bi-gear m-3" style="font-size: 18px;"></i></span>
+                                    <span class="pt-0 mt-0 icon-text" style="position:relative; top:-10px;">SETTINGS</span>
+                                </div>
+                                <div class="my-5">
+                                  <p class="small text-center" style="color:#2C3832; font-size: 12px;">V 1.0</p>
+                                </div>
+                            </div>
+                            <div class="content mx-4 container">
+                              
+                                <div class="product-container">
+                                  <div class="card" style="width: 13rem;">
+                                    <img src="assets/images/img2.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-2">
+                                      <h5 class="card-title">Chicken Wings</h5>
+                                      <p class="card-text d-flex">
+                                        <span class="me-4">Category:</span>
+                                        <span style="text-align: center; width: 20px; height: 20px;" class="bg-primary rounded-circle me-4">N</span>
+                                        <img src="assets/images/pepper.png" style="width: 25px;" class="img-fluid"/>
+                                        <img src="assets/images/pepper.png" style="width: 25px;" class="img-fluid"/>
+                                        
+                                        
+                                        
+                                      </p>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+                                <div class="product-container">
+                                  <div class="card" style="width: 13rem ;">
+                                    <img src="assets/images/img.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-2">
+                                      <h5 class="card-title">Chicken Wings</h5>
+                                      <p class="card-text d-flex">
+                                        <span class="me-4">Category:</span>
+                                        <span style="text-align: center; width: 20px; height: 20px;" class="bg-primary rounded-circle me-4">N</span>
+                                        <img src="assets/images/pepper.png" style="width: 25px;" class="img-fluid"/>
+                                        
+                                        
+                                        
+                                        
+                                      </p>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+                                <div class="product-container">
+                                  <div class="card" style="width:  13rem;">
+                                    <img src="assets/images/img3.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-2">
+                                      <h5 class="card-title">Chicken Wings</h5>
+                                      <p class="card-text d-flex">
+                                        <span class="me-4">Category:</span>
+                                        <span style="text-align: center; width: 20px; height: 20px;" class="bg-primary rounded-circle me-4">N</span>
+                                        <img src="assets/images/pepper.png" style="width: 25px;" class="img-fluid"/>
+                                        <img src="assets/images/pepper.png" style="width: 25px;" class="img-fluid"/>
+                                        
+                                        
+                                        
+                                      </p>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+                                <div class="product-container">
+                                  <div class="card" style="width: 13rem;">
+                                    <img src="assets/images/img4.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-2">
+                                      <h5 class="card-title">Chicken Wings</h5>
+                                      <p class="card-text d-flex">
+                                        <span class="me-4">Category:</span>
+                                        <span style="text-align: center; width: 20px; height: 20px;" class="bg-primary rounded-circle me-4">N</span>
+                                        <img src="assets/images/pepper.png" style="width: 25px;" class="img-fluid"/>
+                                        <img src="assets/images/pepper.png" style="width: 25px;" class="img-fluid"/>
+                                        
+                                        
+                                        
+                                      </p>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+                                <div class="product-container">
+                                  <div class="card" style="width: 13rem;">
+                                    <img src="assets/images/img5.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-2">
+                                      <h5 class="card-title">Chicken Wings</h5>
+                                      <p class="card-text d-flex">
+                                        <span class="me-4">Category:</span>
+                                        <span style="text-align: center; width: 20px; height: 20px;" class="bg-primary rounded-circle me-4">N</span>
+                                        <img src="assets/images/pepper.png" style="width: 25px;" class="img-fluid"/>
+                                        <img src="assets/images/pepper.png" style="width: 25px;" class="img-fluid"/>
+                                        
+                                        
+                                        
+                                      </p>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+                                <div class="product-container">
+                                  <div class="card" style="width: 13rem;">
+                                    <img src="assets/images/img2.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-2">
+                                      <h5 class="card-title">Chicken Wings</h5>
+                                      <p class="card-text d-flex">
+                                        <span class="me-4">Category:</span>
+                                        <span style="text-align: center; width: 20px; height: 20px;" class="bg-primary rounded-circle me-4">N</span>
+                                        <img src="assets/images/pepper.png" style="width: 25px;" class="img-fluid"/>
+                                        <img src="assets/images/pepper.png" style="width: 25px;" class="img-fluid"/>
+                                        
+                                        
+                                        
+                                      </p>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+                                <div class="product-container">
+                                  <div class="card" style="width: 13rem;">
+                                    <img src="assets/images/img8.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-2">
+                                      <h5 class="card-title">Chicken Wings</h5>
+                                      <p class="card-text d-flex">
+                                        <span class="me-4">Category:</span>
+                                        <span style="text-align: center; width: 20px; height: 20px;" class="bg-primary rounded-circle me-4">N</span>
+                                        <img src="assets/images/pepper.png" style="width: 25px;" class="img-fluid"/>
+                                        <img src="assets/images/pepper.png" style="width: 25px;" class="img-fluid"/>
+                                        
+                                        
+                                        
+                                      </p>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+                                <div class="product-container">
+                                  <div class="card" style="width: 13rem;">
+                                    <img src="assets/images/img2.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-2">
+                                      <h5 class="card-title">Chicken Wings</h5>
+                                      <p class="card-text d-flex">
+                                        <span class="me-4">Category:</span>
+                                        <span style="text-align: center; width: 20px; height: 20px;" class="bg-primary rounded-circle me-4">N</span>
+                                        
+                                        
+                                        
+                                        
+                                      </p>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+                                <div class="product-container">
+                                  <div class="card" style="width: 13rem;">
+                                    <img src="assets/images/img7.png" class="card-img-top" alt="...">
+                                    <div class="card-body p-2">
+                                      <h5 class="card-title">Chicken Wings</h5>
+                                      <p class="card-text d-flex">
+                                        <span class="me-4">Category:</span>
+                                        <span style="text-align: center; width: 20px; height: 20px;" class="bg-primary rounded-circle me-4">N</span>
+                                        
+                                        
+                                        
+                                      </p>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                                <div class="container p-2 option-button d-flex flex-wrap justify-content-around ">
+                                  <button class="btn btn-primary">STARTER</button>
+                                  <button class="btn " style="background-color: #D9D9D9;">CLOTH</button>
+                                  <button class="btn " style="background-color: #D9D9D9;">DRINKS</button>
+                                </div>
+                              
+                            </div>
+        
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="side-content">
+                      <p class="order-label ps-1 d-flex align-items-center pt-1 mx-1 mb-0"><span>ORDER #</span><span class="text-end flex-grow-1">123456</span></p>
+                        <p class="small"><i class="bi bi-people-fill mx-1 "></i>STAFF ID: <span style="color: #D89F65; font-size: 20px;" class="mt-4">25</span></p>
+
+                        <hr />
+                        
+                        <div class="container border p-2 d-flex order-product-container" style="position: relative; border-radius: 12px;">
+                          <img src="assets/images/img.png" class=" " style="height: 100%; width: 70px;" />
+                          <div class="d-flex w-100 justify-content-between">
+                              <span class="small px-2">CHICKEN WINGS</span>
+                              <span class="small">QUANTITY</span>
+                              <span class="price-label">$20</span>
+                              <span class="quantity">1</span>
+                          </div>
+                          
+                        </div>
+                        <div class="my-2 container border p-2 d-flex order-product-container" style="position: relative; border-radius: 12px;">
+                          <img src="assets/images/img.png" class=" " style="height: 100%; width: 70px;" />
+                          <div class="d-flex w-100 justify-content-between">
+                              <span class="small px-2">CHICKEN WINGS</span>
+                              <span class="small">QUANTITY</span>
+                              <span class="price-label">$20</span>
+                              <span class="quantity">1</span>
+                          </div>
+                          
+                        </div>
+                        <div class="my-2 container-fluid border p-2 d-flex order-product-container" style="position: relative; border-radius: 12px;">
+                          <img src="assets/images/img.png" class=" " style="height: 100%; width: 70px;" />
+                          <div class="d-flex w-100 justify-content-between">
+                              <span class="small px-2">CHICKEN WINGS</span>
+                              <span class="small">QUANTITY</span>
+                              <span class="price-label">$20</span>
+                              <span class="quantity">1</span>
+                          </div>
+                        
+
+                         </div>
+                         <div class="container-fluid p-3 fw-bold" style="border-style: dotted; border-width: 1px ; border-radius: 12px;">
+                          <p class="small d-flex justify-content-between"><span>SUBTOTAL</span><span></span>$35.00</p>
+                          <p class="small d-flex justify-content-between"><span>SERVICE CHARGE 10%</span><span></span>$35.00</p>
+                          <hr />
+                          <p class="small mb-5 d-flex justify-content-between order-label" style="font-size: 18px ;"><span>TOTAL </span><span></span>$38, 50</p>
+    
+                          <div class="text-center">
+                            <button class="btn btn-danger me-2">CANCEL ORDER</button>
+                            <button class="btn btn-primary">SEND ORDER</button>
+                          </div>
+    
+                        </div>
+                    </div>
+            </div>
+        </div>
+  
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="js/base.js"></script>
+    </body>
+</html>

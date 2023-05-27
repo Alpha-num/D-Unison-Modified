@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'quicksand';
+    src: url('../assets/fonts/quicksand/Quicksand-Medium.ttf') format('truetype');
+    
+    /* You can also add other font weights and styles here */
+  }
+
+
+*{
+    box-sizing: border-box;
+}
+#page-content{
+    background-color: #f7f7f7 !important;
+    height: 650px;
+    
+
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'quicksand';
+    
+}
+
+
+a.list-group-item:hover{
+    background-color: #0D6EFD !important;
+    color:white !important;
+  }
+  .list-group-item:active{
+    background-color: #0D6EFD !important;
+  }
+  .list-group-item.active{
+    color: white !important;
+    background-color: #0D6EFD !important;
+  }
+  
+  .growth-label{
+    font-family: 'Poppins Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 30px;
+    /* identical to box height */
+    color: #000000;
+}
+
+
+select{
+  -webkit-appearance: none;
+  border: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: none;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 200px;
+  padding: 5px ;
+  font-size: 12px ;
+}
+
+.table-responsive table {
+  background-color: white;
+  
+}
+.table-responsive{
+  padding-bottom: 100px;
+  background-color: white;
+}
+td, th {
+  text-align: center;
+  font-size: 14px;
+}
+div.wrapper .form-control{
+  width:  0%;
+  border: none !important ;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 200px;
+  padding: 5px;
+  font-size: 12px ;
+  font-weight: bold; 
+}
+
+@media (min-width:700px){
+  .wrapper{
+    display: flex ;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+    padding-left: 0;
+    padding-bottom: 5px;
+  }
+  .select-input-holder{
+    flex: 4;
+    margin-right: 20px;
+    
+    
+   
+  }
+  
+  .product-search{
+    flex:6;
+    justify-content: center; 
+    margin-left: 10px;
+    
+  }
+  .search-label{
+    left: 25%;
+    
+  }
+
+}
+
+
+@media (max-width:699px){
+  .wrapper .container{
+    margin-top: 25px ;
+    padding-left: 0;    
+  }
+  .mini-menu{
+    display:none;
+    transition: all 0.3s ease;
+}
+
+.mini-menu.active {
+    display: block; /* show sidebar when active class is added */
+    transform: translateX(0); /* move sidebar into view */
+  }
+.mini-menu{
+  padding-right:10px; 
+}
+}
+
+.table .btn-danger, .table .btn {
+  font-size: 12px ;
+  border-radius: 20px ;
+  width: 90px;
+}
+
+.mini-menu{
+  flex-grow:2;
+  border-right: 0.5px solid #0D6EFD;
+  max-width: 90px; 
+  
+  padding-top: 30px;  
+
+}
+.flex-column span.icon-text{
+  font-size: 11px  !important;
+  margin-left: 9px;
+  
+}
+.content{
+  margin-left: 20px;
+  width: 90%;
+}

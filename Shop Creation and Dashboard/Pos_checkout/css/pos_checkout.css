@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'quicksand';
+    src: url('../assets/fonts/quicksand/Quicksand-Medium.ttf') format('truetype');
+    
+    /* You can also add other font weights and styles here */
+  }
+
+
+*{
+    box-sizing: border-box;
+}
+.main-content{
+    flex:8;
+    min-width: 500px;
+    height: 600px;
+
+    
+}
+.side-content{
+    flex: 4;
+    min-width: 300px;
+    height: 800px;
+    
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'quicksand';
+
+}
+.growth-label{
+    font-family: 'Poppins Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 30px;
+    /* identical to box height */
+    color: #000000;
+}
+@media (max-width:599px){
+
+    .product-search-icon{
+        position:absolute;
+        left: 10px;
+        top: 5px;
+    }
+    .search-container{
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    .mini-menu{
+        display:none;
+        transition: all 0.3s ease;
+    }
+    
+    .mini-menu.active {
+        display: block; /* show sidebar when active class is added */
+        transform: translateX(0); /* move sidebar into view */
+      }
+    /* fixing error */
+    .content{
+        width: 100%;
+        overflow-x: auto;
+    }
+    .table-responsive {
+        overflow-x: scroll;
+      }
+      
+      .table {
+        width: 100% !important;
+        /*table-layout: fixed; */
+      }
+      .table td, .table th {
+        min-width: 120px;
+        white-space: wrap;
+      }
+
+    /*      fixing error ends */
+
+
+}
+
+
+@media (min-width:600px) and (max-width:768px){
+    #page-content{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .search-container{
+        display: flex ;
+        flex-wrap: wrap;
+    }
+    .cancel-button-container{
+        text-align: center ;
+    }
+    .mini-menu{
+        border-color: #EAF0F0 !important;
+        border-width:medium;
+    }
+    
+
+}
+@media (min-width:750px){
+    #page-content{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        
+    }
+    .main-content .search-container .form-control{
+        background-color: #EAF0F0;
+        border-color: #EAF0F0;
+        width: 200px;
+    }
+    .cancel-button-container{
+        text-align: center ;
+    }
+    .search-container{
+        display: flex ;
+        flex-wrap: wrap;
+    }
+    .content{
+        width: 100%;
+        overflow-x: auto;
+        height: 550px;
+        
+    }
+    .side-content{
+        margin-left: 12px;
+        border-left: 1px solid;
+        padding-left: 12px;
+        border-width: thin;
+        border-color: #EAF0F0;
+    }
+    .mini-menu{
+        border-color: #EAF0F0 !important;
+        border-width:medium;
+    }
+    #cancel-order-button {
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 10px;
+      }
+      .btn-danger{
+        padding: 15px !important;
+      }
+
+    .pay-now-container .btn-primary{
+        padding: 15px !important;
+    }
+
+}
+
+
+
+.product-search-icon{
+    position:absolute;
+    left: 170px;
+    top: 5px;
+    color: #89928E;
+    
+}
+div.input-group input[type="text"]::placeholder{
+    font-family: 'Poppins';
+    color: #89928E;
+    font-size: 12px;
+  }
+
+.section{
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+}
+.mini-menu{
+    flex-grow:2;
+    border-right: 0.5px solid #0D6EFD;
+    max-width: 73px;
+    padding: 3px;
+}
+
+
+.flex-column span.icon-text{
+    font-size: 12px  !important;
+    margin-left: 9px;
+    
+}
+
+.payment-type{
+    background-color: #EAF0F0;
+    border-radius: 12px ;
+    text-align: center;
+    height: 60px;
+    padding-top: 7px;
+    width: 100px;
+}
+hr {
+    margin-top:10px ;
+}
+h4{
+    color: #2C3832;
+
+}
+.link-active{
+    background-color: #0D6EFD;
+    color: white;
+}
+
+.button-holder1 .btn{
+    background-color: white;
+    border: 1px solid !important;
+    border-color: #005ADE;
+    color: #005ADE;
+}

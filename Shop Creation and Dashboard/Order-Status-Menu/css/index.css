@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'quicksand';
+    src: url('../assets/fonts/quicksand/Quicksand-Medium.ttf') format('truetype');
+    
+    /* You can also add other font weights and styles here */
+  }
+
+
+*{
+    box-sizing: border-box;
+}
+#page-content{
+    background-color: #f7f7f7 !important;
+    height: 650px;
+    
+
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'quicksand';
+    
+}
+
+.rectangle{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    width: 13px;
+    height: 13px;
+    margin: 20px;
+    
+}
+.rectangle-holder{
+    position: absolute;
+  top: 60%;
+  left: 50px;
+  transform: translateY(-50%);
+}
+.blue-rectangle{
+    width: 39px;
+    height: 36px;
+    border-radius: 4px;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    margin-top: 30px;
+    background-color: #0D6EFD;
+}
+a.list-group-item:hover{
+    background-color: #0D6EFD !important;
+    color:white !important;
+  }
+  .list-group-item:active{
+    background-color: #0D6EFD !important;
+  }
+  .list-group-item.active{
+    color: white !important;
+    background-color: #0D6EFD !important;
+  }
+  
+  .growth-label{
+    font-family: 'Poppins Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 30px;
+    /* identical to box height */
+    color: #000000;
+}
+

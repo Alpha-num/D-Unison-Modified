@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>CEO Dashboard</title>
+</head>
+<body>
+
+    <div class="page-wrapper">
+       <!-- 
+        <span> &#9776;</span>
+       -->  
+        <div class="sidebar" id="sidenav">
+            <div class="grid-1">
+                <div class="grid-1-1">
+                    <img class="on-btn" src="svg/Vector.png"/>
+                    <div class="dashboard-btn">
+                        <img src="svg/Vector1.png"/>
+                        <a>Dashboard</a>
+                    </div>
+                    <div class="total-stores">
+                        <img src="svg/Vector3.png"/>
+                        <a> Total Stores </a>
+                    </div>
+                </div>
+
+                <div class="grid-1-2">
+                    <a class="customer-support" style="color:black"> Customer Support </a>
+                    <p class="info"> 
+                        Ask you query , place
+                        requests or important
+                        issues. Our support 
+                        team will contact 24/7 
+                        to you.     
+                    </p>
+                    <div class="customer-support">
+                        <div><i class="ri-customer-service-2-fill"></i></div>
+                        <div><a>Connect Now</a></div>
+                    </div>
+
+                    <div >
+                        <a class="terms"> Terms & Services Privacy Policy </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="main-content" style="width: 100%; position: relative;">
+        <button style="font-size: 30px; position: absolute; top: 0;" id="navbar-btn"> &#9776;</button>
+
+            <div class="navigation">
+                
+                <div class="navigation-2">
+                    <p class="small"> This Month </p>
+                    <p class="big"> $45,365.00 </p> 
+                </div>
+                <div class="navigation-1">
+                    <button> create a store </button>
+                    <i class="ri-chat-4-fill notification" style="position: relative;"></i>
+                    <i class="ri-notification-2-fill notification" style="position: relative;"></i>
+                    <img src="svg/Ellipse1.png" id="user-img"/>
+                </div>     
+                <div class="user-menu" id="user-menu">
+                    <a href="">Sign Out</a>
+                    <a href="">Profile</a>
+                    <a href="" class="last">lorem</a>
+                </div>    
+            </div>
+
+           
+            
+            <div class="profits-parent">
+                <div class="profits profit-1">
+                    <a> Total Stores </a>
+                    <p> 10 </p>
+                </div>
+                <div class="profits profit-2">
+                    <a> Total Profits Today </a>
+                    <p> $10,000 </p>
+                </div>
+                <div class="profits profit-3">
+                    <a> Total Income Today </a>
+                    <p> $40,000 </p>
+                </div>
+            </div>
+
+            <div class="grid-child">
+                <div class="grid-child-1">
+                   
+                    <div class="grid-child-1-2">
+                        <div class="inbox">
+                            <div class="">
+                                <p class="inbox-1"> Inbox </p>
+                                <p class="inbox-2"> <span class="inbox-2-child">Group:</span> Support </p>
+                            </div>
+                            <a> View details </a>
+                        </div>
+
+                        <div class="store-list-customized">
+                            <div class="store-list-1">
+                    
+                                <p> Waiting for order#12345 </p></div>
+                            <a class="store-list-customized-1"> 4:39 </a>
+                        </div>
+
+                        <div class="store-list-customized last">
+                            <div class="store-list-1">
+                    
+                                <p> Customer support id#22234 </p></div>
+                            <a class="store-list-customized-1"> 11:01 </a>
+                        </div>
+
+                    </div>
+
+                    <div class="grid-child-1-2">
+                        <div class="all-stores">
+                            <p> Recent Activity </p>
+                            <a> view all </a>
+                        </div>
+
+                        <div class="store-list">
+                            <div class="store-list-1">
+                                <i class="ri-checkbox-circle-fill circle"></i>
+                                <p> Akin store just sold a product </p></div>
+                            
+                        </div>
+
+                        <div class="store-list">
+                            <div class="store-list-1">
+                                <i class="ri-checkbox-blank-circle-fill fill"></i>
+                                <p> Manager Oye uploaded a product  </p></div>
+                            
+                        </div>
+
+                        <div class="store-list empty">
+                            <div class="store-list-1 fill">
+                                <i class="ri-checkbox-blank-circle-line"></i>
+                                <p> Create new order </p></div>
+                           
+                        </div>
+
+                        <div class="store-list last">
+                            <div class="store-list-1">
+                                <i class="ri-checkbox-circle-fill circle"></i>
+                                <p> Update payment report </p></div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="grid-child-2">
+                       <div>
+                        <h4> Income Trend </h4>
+                        <div class="dates">
+                                <p> 30 Sept 2021</p>
+                                <div class="dates-1">
+                                    <div class="line today"></div>
+                                    <p> Today </p>
+                                    <div class="line yesterday"></div>
+                                    <p> Yesterday </p>
+                                </div>
+                        </div>
+                       </div>
+                        <div class="graph">
+                                <img src="svg/undraw_visual_data_re_mxxo.svg"/>
+                        </div>
+                </div>
+           </div>
+
+        </div>
+    </div>
+    <script>
+        const navbarBtn = document.getElementById('navbar-btn');
+        const sidenav = document.getElementById('sidenav');
+        const userAvartar  =document.getElementById('user-img')
+        const userMenu = document.getElementById("user-menu")
+
+        let toggleDiplay = true
+
+        userMenu.style.opacity = "0"
+
+        userAvartar.onclick = () => {  
+                toggleDiplay = !toggleDiplay
+                
+                toggleDiplay ? userMenu.style.opacity = "1" : userMenu.style.opacity = "0"
+
+        }
+
+        
+        navbarBtn.addEventListener('click', function() {
+            sidenav.style.display = sidenav.style.display === 'none' ? 'block' : 'none';
+      });
+
+
+    </script>
+</body>
+</html>

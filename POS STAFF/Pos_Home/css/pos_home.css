@@ -1,0 +1,222 @@
+@font-face {
+  font-family: 'quicksand';
+  src: url('../assets/fonts/quicksand/Quicksand-Medium.ttf') format('truetype');
+  
+  /* You can also add other font weights and styles here */
+}
+
+
+*{
+  box-sizing: border-box;
+}
+.main-content{
+  flex:8;
+  min-width: 500px;
+  
+
+  
+}
+.side-content{
+  flex: 4;
+  min-width: 300px;
+  height: 800px;
+  
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'quicksand';
+
+}
+.growth-label{
+  font-family: 'Poppins Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 30px;
+  /* identical to box height */
+  color: #000000;
+}
+@media (max-width:599px){
+
+  .product-search-icon{
+      position:absolute;
+      left: 10px;
+      top: 5px;
+  }
+  .search-container{
+      width: auto;
+      display: flex;
+      flex-wrap: wrap;
+  
+  }
+  
+  .mini-menu{
+      display:none;
+      transition: all 0.3s ease;
+  }
+  
+  .mini-menu.active {
+      display: block; /* show sidebar when active class is added */
+      transform: translateX(0); /* move sidebar into view */
+    }
+  /* fixing error */
+  .content{
+      max-width: 90%;
+      text-align: center;
+      
+  }
+  .side-content{
+    padding: 10px ;
+    
+  }
+  .card{
+    margin: 4px; 
+  }
+  
+
+}
+
+
+@media (min-width:600px) and (max-width:768px){
+  #page-content{
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+  }
+  .search-container{
+      display: flex ;
+      flex-wrap: wrap;
+  }
+  .cancel-button-container{
+      text-align: center ;
+  }
+  .mini-menu{
+      border-color: #EAF0F0 !important;
+      border-width:medium;
+  }
+  
+
+}
+@media (min-width:750px){
+  #page-content{
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      
+  }
+  .main-content .search-container .form-control{
+      background-color: #EAF0F0;
+      border-color: #EAF0F0;
+      width: 200px;
+  }
+  
+  .search-container{
+      display: flex ;
+      flex-wrap: wrap;
+  }
+  
+  .side-content{
+      margin-left: 12px;
+      border-left: 1px solid;
+      padding-left: 12px;
+      border-width: thin;
+      border-color: #EAF0F0;
+  }
+  .mini-menu{
+      border-color: #EAF0F0 !important;
+      border-width:medium;
+  }
+    
+
+}
+
+
+
+.product-search-icon{
+  position:absolute;
+  left: 170px;
+  top: 5px;
+  color: #89928E;
+  
+}
+div.input-group input[type="text"]::placeholder{
+  font-family: 'Poppins';
+  color: #89928E;
+  font-size: 12px;
+}
+
+.section{
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+}
+.mini-menu{
+  flex-grow:2;
+  border-right: 0.5px solid #0D6EFD;
+  max-width: 70px;
+  padding: 2px;
+}
+
+
+.flex-column span.icon-text{
+  font-size: 12px  !important;
+  margin-left: 9px;
+  
+}
+
+hr {
+  margin-top:10px ;
+}
+h4{
+  color: #2C3832;
+
+}
+.link-active{
+  background-color: #0D6EFD;
+  color: white;
+}
+
+
+.content{
+  margin-left: 20px;
+  width: 90%;
+}
+
+.income-text{
+  font-family: 'Poppins';
+  font-size: 15px;
+  font-weight: bold;
+}
+.amount{
+  font-family: 'Poppins Bold';
+  font-size: 20px;
+}
+.order-label{
+  font-family: 'quicksand';
+  font-weight: bold;
+  font-size: 19px; 
+  color:#2C3832;
+}
+.label1{
+  font-family: 'quicksand';
+  font-size: 15px;
+}
+.product-label{
+  font-family: 'quicksand';
+  font-size: 14px;
+}
+@media (max-width:599px){
+  .content{
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.aside{
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  height: 70%; 
+}
