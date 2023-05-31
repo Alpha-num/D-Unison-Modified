@@ -51,6 +51,13 @@ body{
 @media (max-width:767px){
     .grid{
         flex-direction: column-reverse;
+        
+    }
+    form{
+        width: 100%;
+    }
+    .parent-div{
+        width: 100%;
     }
     .grid .grid-1 button{
         padding: 10px;
@@ -58,6 +65,7 @@ body{
     .grid .grid-1 input{
         padding: 10px;
         margin: 10px;
+        width: 100%;
     }
     .grid .grid-1 input::placeholder{
         font-size: 14px;
@@ -137,4 +145,37 @@ body{
     cursor: pointer;
     color: #6F6C90;
     text-decoration: none;
+}
+@media(max-width:767px) {
+ .parent-div{
+    margin-left: 0;
+ }
+ .signUpBtnContainer{
+    width: 100%;
+    padding-left: 12px ;
+ }
+ .signupBtn{
+    width: 100% !important; 
+ }
+ .forgot-pass{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    padding-left: 20px; 
+ }
+ .grid-1{
+    padding-right: 20px; 
+ }
+}
+
+@media(max-width:400px){
+    form{
+        padding-right: 10px;
+    }
+    .grid-1 p{
+        padding: 10px;
+    }
+    .grid-1 h4{
+        padding: 10px;
+    }
 }
