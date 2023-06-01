@@ -15,8 +15,8 @@ body{
 }
 
 .grid{
-    display: grid;
-    grid-template-columns: 20% 80%;
+    display: flex;
+    /*grid-template-columns: 20% 80%; */
     border: 6px solid #FFFFFF;
     border-radius: 6px;
 }
@@ -582,4 +582,28 @@ body{
     border-radius: 0px 25px 25px 0px;
     margin-right: 30px;
     padding-left: 12px;
+}
+
+@media (max-width:400px){
+    .profits-parent{
+        padding-right: 30px;
+    }
+    .profits-parent .profit-3{
+        padding: 20px;
+    }
+    .grid-child-2 .dates{
+        width: 100%;
+    }
+    
+    .dates .dates-1 .line{
+        margin-left: 5px;
+        width: 14px;
+    }
+    .dates .dates-1{
+        font-size: 11px;
+    }
+    .dates .dates-1 .yesterday{
+        padding-right: 10px;
+    }
+
 }
