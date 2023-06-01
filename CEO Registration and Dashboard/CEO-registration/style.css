@@ -30,20 +30,7 @@ body{
     box-shadow: 0px 3px 12px rgba(74, 58, 255, 0.18);
     width: 140px;
 }
-.grid{
-    display: flex;
-    grid-template-columns: 45% 55%;
-    align-items: center;
-}
-.grid-1{
-    flex: 4;
-    min-width: 400px;
-    flex-shrink: 0;
 
-}
-.grid-2{
-    flex: 5;
-}
 .forgot-pass{
     margin-bottom: 40px;
 }
@@ -78,10 +65,15 @@ body{
     flex-direction: column;
     padding: 20px;
 }
+form{
+    display: flex;
+    flex-direction: column;
+}
 
-.grid-1 h4{
+.grid .grid-1 h4{
     color: #170f49;
     font-size: 34px;
+    font-weight: 700;
 }
 
 .grid-1 p{
@@ -91,9 +83,8 @@ body{
     padding-top: 10px;
 }
 
-.grid-1 input{
+.grid-1 form input{
     padding: 21px;
-    width: 85%;
     margin-top: 10px;
     border: 1px solid #EFF0F6;
     border-radius: 46px;
@@ -168,14 +159,9 @@ body{
  }
 }
 
-@media(max-width:400px){
-    form{
-        padding-right: 10px;
-    }
-    .grid-1 p{
-        padding: 10px;
-    }
-    .grid-1 h4{
-        padding: 10px;
-    }
-}
+.full-width {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
