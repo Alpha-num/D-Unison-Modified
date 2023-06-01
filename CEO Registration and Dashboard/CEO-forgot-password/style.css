@@ -31,7 +31,7 @@ body{
     width: 140px;
 }
 
-
+/*
 .grid{
     display: flex;
     flex-wrap: wrap;
@@ -51,6 +51,7 @@ body{
 .grid-1{
     min-width: 400px;
 }
+*/
 @media (max-width: 767px){
     .grid{
         flex-direction: column;
@@ -71,13 +72,18 @@ body{
         
         
     }
+    .grid-1 form input{
+        padding: 12px; 
+    }
 }
 
 
 
-.grid-1 h4{
+.row .grid-1 h4{
     color: #170f49;
+    font-family: 'DM Sans', sans-serif;
     font-size: 34px;
+    font-weight: 600;
 }
 
 .grid-1 p{
@@ -89,7 +95,7 @@ body{
 
 .grid-1 input{
     padding: 21px;
-    width: 85%;
+    width: 100%;
     margin-top: 10px;
     border: 1px solid #EFF0F6;
     border-radius: 46px;
@@ -122,8 +128,8 @@ body{
     color: #170f49;
 }
 
-.grid-1 button{
-    width: 85%;
+.grid-1 form button{
+    width: 100%;
     font-family: 'DM Sans';
     font-size: 18px;
     padding: 23px;
@@ -137,9 +143,22 @@ body{
 
 .forgot-pass{
     text-align: center;
-    width: 85%;
+    width: 100%;
     margin-top: 30px;
     cursor: pointer;
     color: #6F6C90;
     text-decoration: none;
+}
+
+@media (max-width:767px){
+    .grid-1 form button{
+        padding: 10px; 
+    }
+
+    .row .grid-1 h4{
+        color: #170f49;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 20px; 
+    } 
+    
 }
