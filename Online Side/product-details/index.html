@@ -13,106 +13,110 @@
     <title>Product Details</title>
   </head>
   <body>
-    <div class="container mb-0">
-        <div class="header">
-            <h4 class="fw-bold">K1 Furnitures</h4>
-            <div class="search-container">
-                <input type="search" class="search-field" placeholder="Search" />
-                <select>
-                    <option>Category</option>
-                </select>
-                <button class="search-btn"> Search </button>
-            </div>   
-            <div class="avatar-container">
+    <div class="container mb-0 p-0">
+
+        <div class="header-nav container-fluid my-4"> 
+            <div class="row my-2 gx-2">
+                <div class="col-md-3">
+                    <h4 class="fw-bold mt-3 text-center">K1 Furnitures</h4>
+                </div>
+                <div class="col-md-7 p-0">
+                    <div class="search-container my-2">
+                        <input type="search" class="search-field" placeholder="Search" />
+                        <select>
+                            <option>Category</option>
+                        </select>
+                        <button class="search-btn"> Search </button>
+                    </div>           
+                </div>
+                <div class="col-md-2 my-2 ">
+                    <div class="avatar-container">
                         
-                <div class="avatar">
-                <a>
-                    <img src="assets/images/heart.png"/>
-                    <span>Orders</span>
-                </a>
+                        <div class="avatar">
+                        <a>
+                            <img src="assets/images/heart.png"/>
+                            <span>Orders</span>
+                        </a>
+                        </div>
+            
+                        <div class="avatar">
+                        <a>
+                            <img src="assets/images/cart.png"/>
+                            <span>My Cart</span>
+                        </a>
+                        </div>
+                     </div>         
                 </div>
-    
-                <div class="avatar">
-                <a>
-                    <img src="assets/images/cart.png"/>
-                    <span>My Cart</span>
-                </a>
-                </div>
-             </div>    
-    
-                
+            </div>
         </div>
-        <div class="row gy-3 clearfix">
-            <div class="col-md-4 pt-5">
-                    <div class="product-img-container h-100">
-                      <img class="product-img" src="assets/images/Product image.png" class="img-fluid ps-3"/>
-                    </div>
-                      
-            </div>
-
-            <div class="col-md-8">
-                <div class="grid-1-1">
-                    <div>
-                      <p class="table">TABLE</p>
-                    <div class="grid-1-price">
-                        <p> Odger </p>
-                        <p> $799 </p>
-                    </div>
-                    </div>
-
-                    
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="container h-100 w-100 product-img-holder">
+                        <img class="product-img" src="assets/images/Product image.png" class="img-fluid"/>
+                      </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="grid-1-1 container-fluid p-0">
+                        <div>
+                          <p class="table">TABLE</p>
+                        <div class="grid-1-price">
+                            <p> Odger </p>
+                            <p> $799 </p>
+                        </div>
+                        </div>
                         <div class="grid-1-stars">
-                                      <div class="stars" id="stars-1">
-                                            <div>
-                                              <img src="assets/images/Vector.png"/>
-                                              <img src="assets/images/Vector.png"/>
-                                              <img src="assets/images/Vector.png"/>
-                                              <img src="assets/images/Vector.png"/>
-                                              <img src="assets/images/Vector2.png"/>
-                                              <span> 44 </span>
-                                              <p><a href="#review">12 reveiws <i class="ri-arrow-right-line"></i></a>   </p>
-                                            </div>
-
-                                            <div class="avartars">
-                                                <img  src="svg/unsplash_F8iUHoidtbI.png" alt="">
-                                                <img class="avartar-1" src="svg/unsplash_F8iUHoidtbI.png" alt="">
-                                                <img class="avartar-1" src="svg/unsplash_F8iUHoidtbI.png" alt="">
-                                                <img class="avartar-1" src="svg/unsplash_F8iUHoidtbI.png" alt="">
-                                            </div> 
-
-                                            <ul class="reveiws-list" id="reveiws-list-1">
-                                                <li> Great product quick delivery too! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, rem.</li>
-                                                <li> Great product quick delivery too! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, pariatur!</li>
-                                                <li> Great product quick delivery too! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, eveniet!</li>
-                                            </ul>
-
-                                      </div>
-
-                                      <div class="add-to-cart" id="cart">
-                                            <a> <i class="ri-add-line"></i> Add to cart </a>
-                                      </div>
-                          </div>
-
-                          <div class="section-panels d-flex">
-                            <div>
-                              <a class="sections active" href="">Description</a>
-                              <a class="sections" href="">Materials</a>
-                              <a class="sections" href=""> Core instuctions </a>
-                            </div>
-                                  <div class="bg-secondary" style="font-size: 10px;">
-                                    <!-- Button trigger modal -->
-                                      <button type="button" class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        <i class="bi bi-journal-text me-1"></i>Write Review
-                                      </button>
+                            <div class="stars">
+                                  <div>
+                                    <img src="svg/Vector.png"/>
+                                    <img src="svg/Vector.png"/>
+                                    <img src="svg/Vector.png"/>
+                                    <img src="svg/Vector.png"/>
+                                    <img src="svg/Vector2.png"/>
+                                    <span> 44 </span>
+                                    <p> 12 reveiws <i class="ri-arrow-right-line"></i>  </p>
                                   </div>
-                                  
-                          </div>
-                          
-                          <p class="prod-description">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, excepturi doloremque molestias magnam fugit vel unde consequuntur soluta similique itaque qui sed mollitia iste? Eius repellendus sapiente rerum dolore velit aspernatur explicabo officiis commodi ducimus asperiores praesentium quibusdam maxime, ipsam molestias ex voluptatibus molestiae, excepturi iusto similique voluptatem. Deleniti hic, ea impedit accusamus voluptas aliquam omnis harum nisi eum earum consectetur numquam iste deserunt iure iusto beatae, consequatur quisquam inventore suscipit ut doloremque nemo optio placeat! Asperiores dignissimos sed enim possimus, est mollitia soluta, error molestiae officia culpa autem rem omnis vel nobis, facilis voluptate veritatis sequi eum. Dignissimos, accusantium?
-                          </p>
-
-            </div>
+    
+                                  <div class="avartars">
+                                      <img  src="svg/unsplash_F8iUHoidtbI.png" alt="">
+                                      <img class="avartar-1" src="svg/unsplash_F8iUHoidtbI.png" alt="">
+                                      <img class="avartar-1" src="svg/unsplash_F8iUHoidtbI.png" alt="">
+                                      <img class="avartar-1" src="svg/unsplash_F8iUHoidtbI.png" alt="">
+                                  </div> 
+    
+                            </div>
+    
+                            <div class="add-to-cart">
+                                  <a> <i class="ri-add-line"></i> Add to cart </a>
+                            </div>
+                </div>
+                        
+    
+    
+    
+    
+    
+                              <div class="section-panels d-flex">
+                                <div>
+                                  <a class="sections active" href="">Description</a>
+                                  <a class="sections" href="">Materials</a>
+                                  <a class="sections" href=""> Core instuctions </a>
+                                </div>
+                                      <div class="bg-secondary" style="font-size: 10px;">
+                                        <!-- Button trigger modal -->
+                                          <button type="button" class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <i class="bi bi-journal-text me-1"></i>Write Review
+                                          </button>
+                                      </div>
+                                      
+                              </div>
+                              
+                              <p class="prod-description">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, excepturi doloremque molestias magnam fugit vel unde consequuntur soluta similique itaque qui sed mollitia iste? Eius repellendus sapiente rerum dolore velit aspernatur explicabo officiis commodi ducimus asperiores praesentium quibusdam maxime, ipsam molestias ex voluptatibus molestiae, excepturi iusto similique voluptatem. Deleniti hic, ea impedit accusamus voluptas aliquam omnis harum nisi eum earum consectetur numquam iste deserunt iure iusto beatae, consequatur quisquam inventore suscipit ut doloremque nemo optio placeat! Asperiores dignissimos sed enim possimus, est mollitia soluta, error molestiae officia culpa autem rem omnis vel nobis, facilis voluptate veritatis sequi eum. Dignissimos, accusantium?
+                              </p>
+    
+                </div>
+                </div>
             </div>
         </div>        
     </div>
@@ -189,54 +193,106 @@
             </div>
         </div>
     </div>
-
-    <div class="main-content mt-0">
-        <div class="grid-1">
-            <div class="items">
-                <img src="assets/images/image1.png"/>
-                <div class="items-1">
-                        <div>
-                                <p class="items-1-name"> chair </p>
-                                <a class="items-1-thing"> Strandman </a>
-                                <p class="items-1-price"> $449 <span class="items-1-price-discount">$399</span> </p>
-                        </div>
-                        <button> + </button>
+    <div class="container mt-3 text-center ">
+        <div class="row gy-2 gx-1 ms-3 ">
+            <div class="col-md-3">
+                
+                <div class="card" style="width: 15rem; height: 22rem;">
+                    <img src="assets/images/image1.png" class="card-img-top" alt="...">
+                    <div class="card-body p-1 pt-0">
+                        <div class="items-1 container-fluid">
+                            <div class="row">
+                                <div class="col-md-8 col">
+                                    <div>
+                                        <p class="items-1-name"> chair </p>
+                                        <a class="items-1-thing"> Strandman </a>
+                                        <p class="items-1-price"> $449 <span class="items-1-price-discount">$399</span> </p>
+                                     </div>
+                                </div>
+                                <div class="col-md-4 col">
+                                    <button> + </button>
+                                </div>
+                            </div>
+                            
+                            
+                    </div>
+                    </div>
                 </div>
             </div>
-            <div class="items">
-                <img src="assets/images/image2.png"/>
-                <div class="items-1">
-                        <div>
-                                <p class="items-1-name"> chair </p>
-                                <a class="items-1-thing"> Strandman </a>
-                                <p class="items-1-price"> $449 <span class="items-1-price-discount">$399</span> </p>
-                        </div>
-                        <button> + </button>
+            <div class="col-md-3">    
+                <div class="card" style="width: 15rem; height: 22rem;">
+                    <img src="assets/images/image2.png" class="card-img-top" alt="...">
+                    <div class="card-body p-1 pt-0">
+                        <div class="items-1 container-fluid">
+                            <div class="row">
+                                <div class="col-md-8 col">
+                                    <div>
+                                        <p class="items-1-name"> chair </p>
+                                        <a class="items-1-thing"> Strandman </a>
+                                        <p class="items-1-price"> $449 <span class="items-1-price-discount">$399</span> </p>
+                                </div>
+                                </div>
+                                <div class="col-md-4 col">
+                                    <button> + </button>
+                                </div>
+                            </div>
+                            
+                            
+                    </div>
+                    </div>
                 </div>
             </div>
-            <div class="items">
-                <img src="assets/images/image3.png"/>
-                <div class="items-1">
-                        <div>
-                                <p class="items-1-name"> chair </p>
-                                <a class="items-1-thing"> Strandman </a>
-                                <p class="items-1-price"> $449 <span class="items-1-price-discount"></span> </p>
-                        </div>
-                        <button> + </button>
+            <div class="col-md-3">
+                <div class="card" style="width: 15rem; height: 22rem; ">
+                    <img src="assets/images/image3.png" class="card-img-top" alt="...">
+                    <div class="card-body p-1 pt-0">
+                        <div class="items-1 container-fluid">
+                            <div class="row">
+                                <div class="col-md-8 col">
+                                    <div>
+                                        <p class="items-1-name"> chair </p>
+                                        <a class="items-1-thing"> Strandman </a>
+                                        <p class="items-1-price"> $449 <span class="items-1-price-discount">$399</span> </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col">
+                                    <button> + </button>
+                                </div>
+                            </div>
+                            
+                            
+                    </div>
+                    </div>
                 </div>
             </div>
-            <div class="items">
-                <img src="assets/images/image4.png"/>
-                <div class="items-1">
-                        <div>
-                                <p class="items-1-name"> chair </p>
-                                <a class="items-1-thing"> Strandman </a>
-                                <p class="items-1-price"> $449 <span class="items-1-price-discount"></span> </p>
-                        </div>
-                        <button> + </button>
+            <div class="col-md-3">
+                <div class="card" style="width: 15rem; height: 22rem;">
+                    <img src="assets/images/image4.png" class="card-img-top" alt="...">
+                    <div class="card-body p-1 pt-0">
+                        <div class="items-1 container-fluid">
+                            <div class="row">
+                                <div class="col-md-8 col">
+                                    <div>
+                                        <p class="items-1-name"> chair </p>
+                                        <a class="items-1-thing"> Strandman </a>
+                                        <p class="items-1-price"> $449 <span class="items-1-price-discount">$399</span> </p>
+                                </div>
+                                </div>
+                                <div class="col-md-4 col">
+                                    <button> + </button>
+                                </div>
+                            </div>
+                            
+                            
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    
+    <div class="mt-0 container">
         <div class="footer">
             <div class="socials">
                 <i class="ri-instagram-line"></i>
@@ -244,9 +300,9 @@
                 <i class="ri-youtube-fill"></i>
             </div>
 
-            <p> © Instor 2022 </p>
+            <p style="font-size: 14px;" class="ms-1 me-1"> © Instor 2022 </p>
 
-            <div class="dark-mode">
+            <div class="dark-mode p-0">
                 <i class="ri-moon-fill"></i>
                 <label class="switch">
                     <input type="checkbox">
@@ -260,7 +316,7 @@
     <script src="./script.js"></script>
         
     
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
   </body>
 </html>
