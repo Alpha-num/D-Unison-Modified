@@ -37,7 +37,7 @@ body{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 25px;
     line-height: 97px;
     color: #1E1E1E;  
   }
@@ -116,8 +116,27 @@ form{
     flex: 4;
     min-width: 400px;
   }
+  
 }
 .label-container{
   flex: 1;
 }
 
+@media(max-width:649px){
+  p.title{
+    font-size: 22px; 
+  }
+  .section .btn{
+    font-size: 14px;
+    padding-left: 1px;  
+
+  }
+  .btn span i{
+    font-size: 17px !important;
+  }
+
+  .btn span img{
+    width: 30px !important;
+    border-radius: 5px !important;
+  }
+}
