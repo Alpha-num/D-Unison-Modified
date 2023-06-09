@@ -5,613 +5,683 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" /> 
     <title>Home</title>
 </head>
 <body>
-  
-    <div class="parent-div">
-      
-    <div class="header">
-      <h4><img src="svg/logo.svg" /></h4>
-      <div class="search-container">
-          <input type="search" class="search-field" placeholder="Search" />
-          <select>
-              <option>Category</option>
-          </select>
-          <button class="search-btn"> Search </button>
-      </div>   
-      <div class="avatar-container">
-                  
-        <div class="avatar">
-          <a>
-          <img src="./svg/Vector.png"/>
-          <span>Profile</span>
-          </a>
+<div class="container-fluid page-wrapper pe-0 ps-0">
+    <div class="row header gy-1 bg-white mt-3 m-1 mb-0 px-4 pb-3">
+            <div class="col-md-2 text-center">
+                <h4><img src="svg/logo.svg" /></h4>
+            </div>
+            <div class="col-md-6 text-center">
+                <div class="row g-0">
+                    <div class="col-md-8 m-0">
+                        <input type="text" class="form-control" placeholder="search" />
+                    </div>
+                    <div class="col-md-4 m-0">
+                        <select>
+                            <option>Category</option>
+                        </select>
+                        <button class="btn btn-primary btn-sm">Search </button>
+                    </div>
+                    
+                </div>
+                
+    
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="menu-link-container d-flex flex-wrap">
+                    <div class="avatar">
+                        <a>
+                        <img src="./svg/Vector.png" class="ms-1"/>
+                        <span>Profile</span>
+                        </a>
+                    </div>
+                    <div class="avatar">
+                        <a>
+                          <img src="./svg/message.png" class="ms-1"/>
+                          <span>Message</span>
+                        </a>
+                    </div>
+                    <div class="avatar">
+                        <a>
+                          <img src="./svg/heart.png" class="ms-1"/>
+                          <span>Orders</span>
+                        </a>
+                    </div>
+                    <div class="avatar">
+                        <a>
+                          <img src="./svg/cart.png" class="ms-1"/>
+                          <span class="ms-1">My Cart</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+    <div class="container-fluid bg-white mt-0">
+        <div class="second-nav">
+            <div>
+                  <a> <img src="svg/menu.png"/> </a>
+                  <a> Home </a>
+                  <a> About Us </a>
+                  <a> Contact Us </a> 
+            </div>
+                 <div>
+                      <select>
+                        <option> English, USD  </option>
+                    </select>
+                 </div>
       </div>
+    </div>
+    <div class="container">
+        <div class="row gx-3 bg-white m-2 p-2">
+            <div class="col-md-3 p-0">
+                <ul class="mt-2 ps-0">
+                    <li class="active"><a>Automobiles</a></li>
+                    <li><a>Clothes and wear</a></li>
+                    <li><a>Home Interiors</a></li>
+                    <li><a>Computer and tech</a></li>
+                    <li><a>Tools, equipments</a></li>
+                    <li><a>Sports and outdoor</a></li>
+                    <li><a>Animal and pets</a></li>
+                    <li><a>Machinery tools</a></li>
+                    <li><a>More category</a></li>
+                </ul>
+            </div>
+            <div class="col-md-7 position-relative">
+                <div class="img-container text-center">
+                    <img src="svg/big.png" class="img-fluid"/>
+                </div>
+                
+                <div class="container title-container">
+                    <h4> <span>Welcome to</span> <span class="fw-bold">Unison</span></h4>
+                    <button class="btn btn-light">Learn more</button>
+                </div>
+            </div>
+            <div class="col-md-2 p-1">
+                <div class="container profile-section ps-2 pe-1 pt-2">
+                    <div class="profile d-flex">
+                        <div class="profile-img-container text-center">
+                            <img src="svg/photo.png" class="img-fluid"/>
+                        </div>
+                        <div class="user-text">
+                            <p class="m-0">Hi, User</p>
+                            <p>Let's get started</p>
+                        </div>
+                    </div>
+                    <div class="button-container pb-3 pe-2">
+                        <button class="btn btn-primary btn-sm w-100">Join now</button>
+                        <button class="btn btn-light btn-sm border-light text-primary w-100 mt-1">Log in</button>
+                    </div>
+                </div>
+                <div class="button-container-2 text-center mt-2">
+                    <button class="btn btn-sm ps-1" style="background-color: #F38332; color: white;">Sell used Products</button>
+                    <button class="btn btn-sm mt-2 ps-1" style="background-color: #55BDC3; color: white;">Buy used Products</button>
+                    <button class="btn btn-sm mt-2 ps-1" style="background-color: #55BDC3; color: white;">Own a Store</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-      <div class="avatar">
-        <a>
-          <img src="./svg/message.png"/>
-          <span>Message</span>
-        </a>
-      </div> 
-        <div class="avatar">
-          <a>
-              <img src="./svg/heart.png"/>
-              <span>Orders</span>
-          </a>
-          </div>
+    <div class="container deals-and-offers-container pe-3 ps-3 pb-5">
+        <div class="container mt-4 p-0 d-flex bg-white flex-wrap product-off-container justify-content-evenly">
+            <div class="item item-1 pt-3 m-0 ">
+                <h4 class="mb-0 fw-bold fs-5">Deals and offers</h4>
+                <p style="color: #8B96A5; font-weight: 400;">Hygiene equipments</p>
+                <div class="timer-holder d-flex flex-wrap">
+                    <div class="text-white ">
+                        <h4 class="mb-0">04</h4>
+                        <span class="d-block">Days</span>
+                    </div>
+                    <div class="text-white ">
+                        <h4 class="mb-0">13</h4>
+                        <span class="d-block">Days</span>
+                    </div>
+                    <div class="text-white">
+                        <h4 class="mb-0">34</h4>
+                        <span class="d-block">Days</span>
+                    </div>
+                    <div class="text-white ">
+                        <h4 class="d-block mb-0">56</h4>
+                        <span class="d-block">Days</span>
+                    </div>
+                </div> 
+            </div>
+            <div class="item item-2 pt-3 text-center">
+                <div class="product-img text-center">
+                    <img src="svg/img1.png" class="img-fluid"/>
+                </div>
+                <div>
+                    <p class="product-name">Smart Watches</p>
+                   <p class="percentage-off"><span>-25%</span></p>
+                </div>
+                
+            </div>
+            <div class="item item-3 pt-3 text-center">
+                <div class="product-img">
+                    <img src="svg/img2.png" class="img-fluid"/>
+                </div>
+                <div class="mt-3">
+                    <p class="product-name">Laptops </p>
+                    <p class="percentage-off"><span>-15%</span></p>
+                </div>
+                
+            </div>
+            <div class="item item-4 pt-3 text-center">
+                <div class="product-img">
+                    <img src="svg/img3.png" class="img-fluid"/>
+                </div>
+                <div class="mt-3 pt-3">
+                    <p class="product-name">GoPro Cameras</p>
+                    <p class="percentage-off"><span>-40%</span></p>
+                </div>
+                
+            </div>
+            <div class="item item-5 pt-3 text-center">
+                <div class="product-img">
+                    <img src="svg/img4.png" class="img-fluid"/>
+                </div>
+                <div>
+                    <p class="product-name">Headphones</p>
+                    <p class="percentage-off"><span>-25%</span></p>
+                </div>
+                
+            </div>
+            <div class="item item-6 pt-3 text-center">
+                <div class="product-img">
+                    <img src="svg/img5.png" class="img-fluid"/>
+                </div>
+                <div>
+                    <p class="product-name">Canon Cameras </p>
+                 <p class="percentage-off"><span>-25%</span></p>
+                </div>
+                
+            </div>
+        </div>
 
-          <div class="avatar">
-          <a>
-              <img src="./svg/cart.png"/>
-              <span>My Cart</span>
-          </a>
+    </div>
+    <div class="container">
+        <div class="container">
+            <div class="row bg-white">
+                <div class="col-md-3 position-relative ps-0 pe-0">
+                    <img src="./svg/bgimg1.png" class="img-fluid shop-image w-100" />
+                    <div class="store-text-overlay position-absolute">
+                        <h3 class="text-white text-center" style="letter-spacing: -0.2px; font-weight: 600; Line-height:26px; font-size: 20px;">Online Store</h3>
+                        <div class="mt-5 text-center">
+                            <button class="btn btn-sm btn-light">Shop now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 mb-0 pb-0 p-0">
+                    <div class="container product-list-container h-100 ">
+                        <div class="row row-cols-2 row-cols-sm-2 h-100 row-cols-md-4 frame">
+                          <div class="col d-flex p-2">
+                            <div class="item-container">
+                                <h4 class="item-name">Soft Chairs</h4>
+                                <p class="item-price">From USD 100</p>
+                            </div>
+                            <div class="item-img">
+                                <img src="svg/rasm.png" class="img-fluid"/>
+                            </div>
+                          </div>
+                          <div class="col d-flex p-2">
+                            <div class="item-container">
+                                <h4 class="item-name">Soft Chairs</h4>
+                                <p class="item-price">From USD 100</p>
+                            </div>
+                            <div class="item-img">
+                                <img src="svg/rasm11.png" class="img-fluid"/>
+                            </div>
+                          </div>
+                          <div class="col d-flex p-2">
+                            <div class="item-container">
+                                <h4 class="item-name">Soft Chairs</h4>
+                                <p class="item-price">From USD 100</p>
+                            </div>
+                            <div class="item-img">
+                                <img src="svg/rasm2.png" class="img-fluid"/>
+                            </div>
+                          </div>
+                          <div class="col d-flex p-2">
+                            <div class="item-container">
+                                <h4 class="item-name">Soft Chairs</h4>
+                                <p class="item-price">From USD 100</p>
+                            </div>
+                            <div class="item-img">
+                                <img src="svg/rasm3.png" class="img-fluid"/>
+                            </div>
+                          </div>
+                          <div class="col d-flex p-2">
+                            <div class="item-container">
+                                <h4 class="item-name">Soft Chairs</h4>
+                                <p class="item-price">From USD 100</p>
+                            </div>
+                            <div class="item-img">
+                                <img src="svg/rasm4.png" class="img-fluid"/>
+                            </div>
+                          </div>
+                          <div class="col d-flex p-2">
+                            <div class="item-container">
+                                <h4 class="item-name">Soft Chairs</h4>
+                                <p class="item-price">From USD 100</p>
+                            </div>
+                            <div class="item-img">
+                                <img src="svg/rasm5.png" class="img-fluid"/>
+                            </div>
+                          </div>
+                          <div class="col d-flex p-2">
+                            <div class="item-container">
+                                <h4 class="item-name">Soft Chairs</h4>
+                                <p class="item-price">From USD 100</p>
+                            </div>
+                            <div class="item-img">
+                                <img src="svg/rasm6.png" class="img-fluid"/>
+                            </div>
+                          </div>
+                          <div class="col d-flex p-2">
+                            <div class="item-container">
+                                <h4 class="item-name">Soft Chairs</h4>
+                                <p class="item-price">From USD 100</p>
+                            </div>
+                            <div class="item-img">
+                                <img src="svg/rasm7.png" class="img-fluid"/>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container mt-3 mb-3 bg-info">
+            <div class="row bg-white p-0">
+                <div class="col-md-3 position-relative ps-0 pe-0">
+                    <div>
+                        <img src="./svg/bgimg2.png" class="img-fluid shop-image w-100" />
+                    </div>
+                    
+                    <div class="store-text-overlay position-absolute">
+                        <h3 class="text-white text-center" style="letter-spacing: -0.2px; font-weight: 600; Line-height:26px; font-size: 20px;">Online Store</h3>
+                        <div class="mt-5 text-center">
+                            <button class="btn btn-sm btn-light">Shop now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 p-0">
+                    <div class="container product-list-container h-100">
+                        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 ">
+                          <div class="col d-flex p-2">
+                            <div class="item-container">
+                                <h4 class="item-name">Soft Chairs</h4>
+                                <p class="item-price">From USD 100</p>
+                            </div>
+                            <div class="item-img">
+                                <img src="svg/rasm.png" class="img-fluid"/>
+                            </div>
+                          </div>
+                          <div class="col d-flex p-2">
+                            <div class="item-container">
+                                <h4 class="item-name">Soft Chairs</h4>
+                                <p class="item-price">From USD 100</p>
+                            </div>
+                            <div class="item-img">
+                                <img src="svg/rasm.png" class="img-fluid"/>
+                            </div>
+                          </div>
+                          <div class="col d-flex p-2">
+                            <div class="item-container">
+                                <h4 class="item-name">Soft Chairs</h4>
+                                <p class="item-price">From USD 100</p>
+                            </div>
+                            <div class="item-img">
+                                <img src="svg/rasm.png" class="img-fluid"/>
+                            </div>
+                          </div>
+                          <div class="col d-flex p-2">
+                            <div class="item-container">
+                                <h4 class="item-name">Soft Chairs</h4>
+                                <p class="item-price">From USD 100</p>
+                            </div>
+                            <div class="item-img">
+                                <img src="svg/rasm.png" class="img-fluid"/>
+                            </div>
+                          </div>
+                          <div class="col d-flex p-2">
+                            <div class="item-container">
+                                <h4 class="item-name">Soft Chairs</h4>
+                                <p class="item-price">From USD 100</p>
+                            </div>
+                            <div class="item-img">
+                                <img src="svg/rasm.png" class="img-fluid"/>
+                            </div>
+                          </div>
+                          <div class="col d-flex p-2">
+                            <div class="item-container">
+                                <h4 class="item-name">Soft Chairs</h4>
+                                <p class="item-price">From USD 100</p>
+                            </div>
+                            <div class="item-img">
+                                <img src="svg/rasm.png" class="img-fluid"/>
+                            </div>
+                          </div>
+                          <div class="col d-flex p-2">
+                            <div class="item-container">
+                                <h4 class="item-name">Soft Chairs</h4>
+                                <p class="item-price">From USD 100</p>
+                            </div>
+                            <div class="item-img">
+                                <img src="svg/rasm.png" class="img-fluid"/>
+                            </div>
+                          </div>
+                          <div class="col d-flex p-2">
+                            <div class="item-container">
+                                <h4 class="item-name">Soft Chairs</h4>
+                                <p class="item-price">From USD 100</p>
+                            </div>
+                            <div class="item-img">
+                                <img src="svg/rasm.png" class="img-fluid"/>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container px-3">
+        <div class="container form-container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h4 class="title fs-3 text-white m-2">Sell Your Used Products</h4>
+                </div>
+                <div class="col-md-4">
+                    <form class="bg-white p-3">
+                        <h4 class="title fs-6 my-3">Got a used Item for sale?</h4>
+                        <div class="mb-3">
+                          <input type="email" class="form-control" placeholder="Item Name?" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Type more details"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Item Name?" id="exampleInput" aria-describedby="emailHelp">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="mb-3">
+                                    <select class="form-select" id="inputGroupSelect01">
+                                        <option >Pcs...</option>
+                                      </select>
+                                </div>
+                                  
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-3">
+        <h4 class="title fs-4">Recommended Items</h4>
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-5 g-2 recommended-section row-gap">
+          <div class="col">
+            <div class="recommended-items-container">
+                <div>
+                    <img src="svg/rec1.png" class="img-fluid"/>
+                </div>
+                <h4>$10.30</h4>
+                <p>Tshirts with multiple colors for men.</p>
+            </div>
+            
           </div>
-       </div>    
+          <div class="col">
+            <div class="recommended-items-container">
+                <div>
+                    <img src="svg/rec2.png" class="img-fluid"/>
+                </div>
+                <h4>$10.30</h4>
+                <p>Tshirts with multiple colors for men.</p>
+            </div>
+            
+          </div>
+          <div class="col">
+            <div class="recommended-items-container">
+                <div>
+                    <img src="svg/rec3.png" class="img-fluid"/>
+                </div>
+                <h4>$10.30</h4>
+                <p>Tshirts with multiple colors for men.</p>
+            </div>
+            
+          </div>
+          <div class="col">
+            <div class="recommended-items-container">
+                <div>
+                    <img src="svg/rec4.png" class="img-fluid"/>
+                </div>
+                <h4>$10.30</h4>
+                <p>Tshirts with multiple colors for men.</p>
+            </div>
+            
+          </div>
+          <div class="col">
+            <div class="recommended-items-container">
+                <div>
+                    <img src="svg/rec5.png" class="img-fluid"/>
+                </div>
+                <h4>$10.30</h4>
+                <p>Tshirts with multiple colors for men.</p>
+            </div>
+            
+          </div>
+          <div class="col">
+            <div class="recommended-items-container">
+                <div>
+                    <img src="svg/rec6.png" class="img-fluid"/>
+                </div>
+                <h4>$10.30</h4>
+                <p>Tshirts with multiple colors for men.</p>
+            </div>
+            
+          </div>
+          <div class="col">
+            <div class="recommended-items-container">
+                <div>
+                    <img src="svg/rec7.png" class="img-fluid"/>
+                </div>
+                <h4>$10.30</h4>
+                <p>Tshirts with multiple colors for men.</p>
+            </div>
+            
+          </div>
+          <div class="col">
+            <div class="recommended-items-container">
+                <div>
+                    <img src="svg/rec7.png" class="img-fluid"/>
+                </div>
+                <h4>$10.30</h4>
+                <p>Tshirts with multiple colors for men.</p>
+            </div>
+            
+          </div>
+          <div class="col">
+            <div class="recommended-items-container">
+                <div>
+                    <img src="svg/rec8.png" class="img-fluid"/>
+                </div>
+                <h4>$10.30</h4>
+                <p>Tshirts with multiple colors for men.</p>
+            </div>
+            
+          </div>
+          <div class="col">
+            <div class="recommended-items-container">
+                <div>
+                    <img src="svg/rec9.png" class="img-fluid"/>
+                </div>
+                <h4>$10.30</h4>
+                <p>Tshirts with multiple colors for men.</p>
+            </div>
+            
+          </div>
 
           
-  </div>
-          <!--Navigation-->
-    <div class="second-nav">
-        <div>
-              <a> <img src="svg/menu.png"/> </a>
-              <a> Home </a>
-              <a> About Us </a>
-              <a> Contact Us </a> 
         </div>
-             <div>
-                  <select>
-                    <option> English, USD  </option>
-                </select>
-             </div>
-  </div>
-
-        <div class="main-content">
-                
-                   <div class="parent-grid">
-                    
-                          <div class="grid-1">
-                              
-                              <div class="grid-1-1">
-                                      <a class="active"> Automobiles </a>
-                                      <a> Clothes and wear </a>
-                                      <a> Home interiors </a>
-                                      <a> Computer and tech </a>
-                                      <a> Tools, equipments </a>
-                                      <a> Sports and outdoor </a> 
-                                      <a> Animal and pets </a>
-                                      <a> Machinery tools </a>
-                                      <a> More category </a>
-                              </div>
-
-                              <div class="grid-1-2">
-                                      <img src="svg/big.png"/>
-                              </div>
-
-                              <div class="grid-1-3">
-
-                                      <div class="login-section">
-                                            <div class="login-section-1">
-                                                  <img src="svg/photo.png"/>
-                                                  <p> Hi, User <br> let's get started</p>
-                                            </div>
-                                            <div class="login-buttons">
-                                              <button class="login-section-1-button-1"> Join now </button>
-                                              <button class="login-section-1-button-2"> Log in </button>
-                                            </div>
-                                      </div>
-
-                                      <div class="store-buttons">
-                                          <button class="store-buttons-1">Sell used products</button>
-                                          <button class="store-buttons-2"> Buy used products </button>
-                                          <button class="store-buttons-2"> Own a store </button>
-                                      </div>
-
-                              </div>
-
-                          </div>
-
-                          <div class="grid-2">
-                                <div class="grid-2-1">
-                                        <h4> Deals and offers </h4>
-                                        <p class="hygiene"> Hygiene equipments </p>
-
-                                        <div class="grid-2-1-1">
-                                              <div class="grid-2-1-1-1"> 
-                                                    <h4> 04 </h4>
-                                                    <p> Days </p>    
-                                              </div>
-
-                                              <div class="grid-2-1-1-1"> 
-                                                <h4> 13 </h4>
-                                                <p> Hour </p>
-                                          </div>
-
-                                          <div class="grid-2-1-1-1"> 
-                                            <h4> 34 </h4>
-                                            <p> Mins </p>
-                                      </div>
-
-                                      <div class="grid-2-1-1-1"> 
-                                        <h4> 56 </h4>
-                                        <p> Secs </p>
-                                  </div>
-
-                                        </div>
-
-                                </div>
-
-                                <div class="grid-2-2">
-                                      <div class="grid-2-2-1">
-                                        <div class="img-container"><img src="svg/img1.png"/></div>
-                                              <p> Smart watches </p>
-                                              <a> -25% </a>
-                                      </div>
-
-                                      <div class="grid-2-2-1">
-                                        <div class="img-container"><img src="svg/img2.png"/></div>                                      
-                                        <p> Laptops </p>
-                                        <a> -15% </a>
-                                        </div>
-
-                                        <div class="grid-2-2-1">
-                                          <div class="img-container"><img src="svg/img3.png"/></div>
-                                          <p class="img-text"> GoPro camreas </p>
-                                          <a> -40% </a>
-                                  </div>
-
-                                  <div class="grid-2-2-1">
-                                    <div class="img-container"><img src="svg/img4.png"/></div>
-                                    <p> Headphones </p>
-                                    <a> -25% </a>
-                            </div>
-
-                            <div class="grid-2-2-1">
-                              <div class="img-container"><img src="svg/img5.png"/></div>
-                              <p> Canon Cameras </p>
-                              <a> -25% </a>
-                      </div>
-
-                                </div>
-
-                          </div>
-
-                          <div class="grid-3">
-
-                            <div class="grid-3-1">
-                                   <div class="grid-3-1-child">
-                                        <h4> Online Store </h4>
-                                        <button> Shop now </button> 
-                                   </div>
-                            </div>
-
-                            <div class="grid-3-2">
-                                        <div class="grid-3-2-1">
-                                            <div>
-                                                <h4> Soft Chairs </h4>
-                                              <div class="grid-3-2-1-child">
-                                                <p> From </p>
-                                                <p>USD 19</p>
-                                              </div>
-                                                
-                                            </div>
-                                            <img src="svg/rasm.png"/>
-                                        </div>
-                                        <div class="grid-3-2-1">
-                                            <div>
-                                                <h4> Sofa & Chairs </h4>
-                                              <div class="grid-3-2-1-child">
-                                                <p> From </p>
-                                                <p>USD 19</p>
-                                              </div> 
-                                            </div>
-
-                                            <img src="svg/rasm2.png"/>
-                                      </div>
-                                        <div class="grid-3-2-1">
-                                            <div>
-                                                 <h4> Kitchen dishes </h4>
-                                              <div class="grid-3-2-1-child">
-                                                <p> From </p>
-                                                <p>USD 19</p>
-                                              </div>
-                                                
-                                            </div>
-                                            <img src="svg/rasm3.png"/>
-                                        </div>
-                                        <div class="grid-3-2-1">
-                                            <div>
-                                                <h4> Smart watches </h4>
-                                              <div class="grid-3-2-1-child">
-                                                <p> From </p>
-                                                <p>USD 19</p>
-                                              </div>
-                                                
-                                            </div>
-                                            <img src="svg/rasm4.png"/>
-                                        </div>
-                                        <div class="grid-3-2-1">
-                                            <div>
-                                              <h4> Kitchen Mixers </h4>
-                                              <div class="grid-3-2-1-child">
-                                                <p> From </p>
-                                                <p>USD 19</p>
-                                              </div>
-                                                
-                                            </div>
-                                            <img src="svg/rasm5.png"/>
-                                        </div>
-                                        <div class="grid-3-2-1">
-                                            <div>
-                                                <h4> Bledners </h4>
-                                              <div class="grid-3-2-1-child">
-                                                <p> From </p>
-                                                <p>USD 19</p>
-                                              </div>
-                                                
-                                            </div>
-                                            <img src="svg/rasm6.png"/>
-                                        </div>
-                                        <div class="grid-3-2-1">
-                                            <div>
-                                                 <h4> Home appliance </h4>
-                                              <div class="grid-3-2-1-child">
-                                                <p> From </p>
-                                                <p>USD 19</p>
-                                              </div>
-                                                
-                                            </div>
-                                            <img src="svg/rasm7.png"/>
-                                        </div>
-                                        <div class="grid-3-2-1">
-                                            <div>
-                                                 <h4> Coffee maker </h4>
-                                              <div class="grid-3-2-1-child">
-                                                <p> From </p>
-                                                <p>USD 19</p>
-                                              </div>
-                                                
-                                            </div>
-                                            <img src="svg/rasm8.png"/>
-                                        </div>
-                            </div>
-
-                          </div>
-
-                          <div class="grid-4">
-
-                            <div class="grid-3-1-2">
-                                   <div class="grid-3-1-child">
-                                        <h4> Advertise your store here </h4>
-                                        <button> Shop now </button> 
-                                   </div>
-                            </div>
-
-                            <div class="grid-3-2">
-                                        <div class="grid-3-2-1">
-                                            <div>
-                                                <h4> Soft Chairs </h4>
-                                              <div class="grid-3-2-1-child">
-                                                <p> From </p>
-                                                <p>USD 19</p>
-                                              </div>
-                                                
-                                            </div>
-                                            <img src="svg/rasm9.png"/>
-                                        </div>
-                                        <div class="grid-3-2-1">
-                                            <div>
-                                                <h4> Sofa & Chairs </h4>
-                                              <div class="grid-3-2-1-child">
-                                                <p> From </p>
-                                                <p>USD 19</p>
-                                              </div> 
-                                            </div>
-
-                                            <img src="svg/rasm10.png"/>
-                                      </div>
-                                        <div class="grid-3-2-1">
-                                            <div>
-                                                 <h4> Kitchen dishes </h4>
-                                              <div class="grid-3-2-1-child">
-                                                <p> From </p>
-                                                <p>USD 19</p>
-                                              </div>
-                                                
-                                            </div>
-                                            <img src="svg/rasm11.png"/>
-                                        </div>
-                                        <div class="grid-3-2-1">
-                                            <div>
-                                                <h4> Smart watches </h4>
-                                              <div class="grid-3-2-1-child">
-                                                <p> From </p>
-                                                <p>USD 19</p>
-                                              </div>
-                                                
-                                            </div>
-                                            <img src="svg/rasm12.png"/>
-                                        </div>
-                                        <div class="grid-3-2-1">
-                                            <div>
-                                              <h4> Kitchen Mixers </h4>
-                                              <div class="grid-3-2-1-child">
-                                                <p> From </p>
-                                                <p>USD 19</p>
-                                              </div>
-                                                
-                                            </div>
-                                            <img src="svg/rasm13.png"/>
-                                        </div>
-                                        <div class="grid-3-2-1">
-                                            <div>
-                                                <h4> Bledners </h4>
-                                              <div class="grid-3-2-1-child">
-                                                <p> From </p>
-                                                <p>USD 19</p>
-                                              </div>
-                                                
-                                            </div>
-                                            <img src="svg/rasm14.png"/>
-                                        </div>
-                                        <div class="grid-3-2-1">
-                                            <div>
-                                                 <h4> Home appliance </h4>
-                                              <div class="grid-3-2-1-child">
-                                                <p> From </p>
-                                                <p>USD 19</p>
-                                              </div>
-                                                
-                                            </div>
-                                            <img src="svg/rasm15.png"/>
-                                        </div>
-                                        <div class="grid-3-2-1">
-                                            <div>
-                                                 <h4> Coffee maker </h4>
-                                              <div class="grid-3-2-1-child">
-                                                <p> From </p>
-                                                <p>USD 19</p>
-                                              </div>
-                                                
-                                            </div>
-                                            <img src="svg/rasm16.png"/>
-                                        </div>
-                            </div>
-
-                          </div>
-
-                          <div class="grid-5">
-                                  <h3 class="grid-5-1"> Sell Your Used Products </h3>
-                                  <div class="grid-5-2">
-                                      <h4> Got a used Item for sale ? </h4>
-                                      <form class="grid-5-2-1">
-                                              <input type="text" placeholder="Item Name"/>
-                                              <textarea placeholder="Type more details"></textarea>
-                                              <div>
-                                                  <input type="number" placeholder="Quantity"/>
-                                                  <select>
-                                                        <option> Pcs </option>
-                                                  </select>
-                                              </div>
-                                      </form>
-                                      <button> Upload Now </button>
-                                  </div>
-
-                          </div>
-
-                          <div class="grid-6">
-                              <h4> Recommended items </h4>
-                              <div class="grid-6-1">
-
-                                <div class="grid-6-1-1">
-                                  <img src="svg/rec1.png"/>
-                                  <div class="grid-6-1-1-text">
-                                    <a>$10.30</a>
-                                  <p> T-shirts with multiple colors, for men </p>
-                                  </div>
-                                </div>
-                                <div class="grid-6-1-1">
-                                  <img src="svg/rec2.png"/>
-                                  <div class="grid-6-1-1-text">
-                                    <a>$10.30</a>
-                                  <p> T-shirts with multiple colors, for men </p>
-                                  </div>
-                                </div>
-                                <div class="grid-6-1-1">
-                                  <img src="svg/rec3.png"/>
-                                  <div class="grid-6-1-1-text">
-                                    <a>$10.30</a>
-                                  <p> T-shirts with multiple colors, for men </p>
-                                  </div>
-                                </div>
-                                <div class="grid-6-1-1">
-                                  <img src="svg/rec4.png"/>
-                                  <div class="grid-6-1-1-text">
-                                    <a>$10.30</a>
-                                  <p> T-shirts with multiple colors, for men </p>
-                                  </div>
-                                </div>
-                                <div class="grid-6-1-1">
-                                  <img src="svg/rec5.png"/>
-                                  <div class="grid-6-1-1-text">
-                                    <a>$10.30</a>
-                                  <p> T-shirts with multiple colors, for men </p>
-                                  </div>
-                                </div>
-
-                              </div>
-
-                          </div>
-
-                          <div class="grid-6">
-                            <div class="grid-6-1">
-
-                              <div class="grid-6-1-1">
-                                <img src="svg/rec6.png"/>
-                                <div class="grid-6-1-1-text">
-                                  <a>$10.30</a>
-                                <p> T-shirts with multiple colors, for men </p>
-                                </div>
-                              </div>
-                              <div class="grid-6-1-1">
-                                <img src="svg/rec7.png"/>
-                                <div class="grid-6-1-1-text">
-                                  <a>$10.30</a>
-                                <p> T-shirts with multiple colors, for men </p>
-                                </div>
-                              </div>
-                              <div class="grid-6-1-1">
-                                <img src="svg/rec5.png"/>
-                                <div class="grid-6-1-1-text">
-                                  <a>$10.30</a>
-                                <p> T-shirts with multiple colors, for men </p>
-                                </div>
-                              </div>
-                              <div class="grid-6-1-1">
-                                <img src="svg/rec8.png"/>
-                                <div class="grid-6-1-1-text">
-                                  <a>$10.30</a>
-                                <p> T-shirts with multiple colors, for men </p>
-                                </div>
-                              </div>
-                              <div class="grid-6-1-1">
-                                <img src="svg/rec9.png"/>
-                                <div class="grid-6-1-1-text">
-                                  <a>$10.30</a>
-                                <p> T-shirts with multiple colors, for men </p>
-                                </div>
-                              </div>
-
-                            </div>
-
-                          </div>
-
-                          <div class="grid-7">
-                                  <h4> Top Selling Stores </h4>
-
-                                  <div class="grid-7-1">
-                                          <div class="grid-7-1-child">
-                                            <div class="pic"></div>
-                                            <div class="search-icon"><i class="ri-search-line"></i></div>
-                                            <div class="text-div">
-                                                <p>Shokem Supermarket Dugbe Ibadan</p>
-                                            </div>
-                                          </div>
-                                          <div class="grid-7-1-child">
-                                            <div class="pic1"></div>
-                                            <div class="search-icon"><i class="ri-search-line"></i></div>
-                                            <div class="text-div">
-                                              <p> Shokem Supermarkt Dugbe Ibadan </p>
-                                            </div>
-
-                                          </div>
-                                          <div class="grid-7-1-child">
-                                            <div class="pic2"></div>
-                                            <div class="search-icon"><i class="ri-search-line"></i></div>
-                                            <div class="text-div">
-                                              <p> Shokem Supermarkt Dugbe Ibadan </p>
-                                            </div>
-
-                                          </div>
-                                          <div class="grid-7-1-child">
-                                            <div class="pic3"></div>
-                                            <div class="search-icon"><i class="ri-search-line"></i></div>
-                                            <div class="text-div">
-                                              <p> Shokem Supermarkt Dugbe Ibadan </p>
-                                            </div>
-                                            
-
-                                          </div>
-                                  </div>
-
-                          </div>
-                    
-                     </div>
-
-
-        </div>
-
-    </div>
-    <!--First footer-->
-    <div class="footer-1">
-      <h2> Suscribe on our newsletter </h2>
-      <p> Get daily news on upcoming offers from many suppliers all over the world </p>
-      <div class="email-field">
-            <input type="text" placeholder="Email"/>
-            <button> Subscibe </button>
       </div>
-</div>
-
-<!--Second footer-->
-<div class="footer-2">
-
-    <div class="footer-2-1">
-              <img src="svg/logo-small.png"/>
-              <p> Solution to your Business is simply <br> DUNISON </p>
-                  <div class="category-about-img">
-                        <img src="svg/facebook.png"/>
-                        <img src="svg/twitter.png"/>
-                        <img src="svg/linkedin.png"/>
-                        <img src="svg/insta.png"/>
-                        <img src="svg/youtube.png"/>
-                  </div>
-    </div>
-
-    <div class="footer-categories-parent">
-
-            <div class="category-about"> 
-                  <p> About Us </p>
-                  <a> About Us </a>
-                  <a> Find Store </a>
-                  <a> Categories </a>
-                  <a> Blogs </a>
+      <div class="container supermarket pb-5">
+        <h4 class="title fs-5 ">Top selling Stores</h4>
+        <div class="row row-cols-1 g-2 row-cols-sm-2 row-cols-md-4">
+            <div class="col">
+                <div class="card position-relative" style="width: 14rem;">
+                    <img src="svg/bg1.png" class="card-img-top" alt="..."> 
+                        <div class="search-icon"><i class="ri-search-line"></i></div>
+                    <div class="card-body">
+                      <p class="mt-3">Shokem Supermarket Dugbe Ibadan</p>
+                    </div>
+                </div>
             </div>
-
-            <div class="category-about"> 
-              <p> Partnership </p>
-              <a> About Us </a>
-              <a> Find Store </a>
-              <a> Categories </a>
-              <a> Blogs </a>
+            <div class="col">
+                <div class="card position-relative" style="width: 14rem;">
+                    <img src="svg/bg2.png" class="card-img-top" alt="..."> 
+                        <div class="search-icon"><i class="ri-search-line"></i></div>
+                    <div class="card-body">
+                      <p class="mt-3">Shokem Supermarket Dugbe Ibadan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card position-relative" style="width: 14rem;">
+                    <img src="svg/bg3.png" class="card-img-top" alt="..."> 
+                        <div class="search-icon"><i class="ri-search-line"></i></div>
+                    <div class="card-body">
+                      <p class="mt-3">Shokem Supermarket Dugbe Ibadan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card position-relative" style="width: 14rem;">
+                    <img src="svg/bg4.png" class="card-img-top" alt="..."> 
+                        <div class="search-icon"><i class="ri-search-line"></i></div>
+                    <div class="card-body">
+                      <p class="mt-3">Shokem Supermarket Dugbe Ibadan</p>
+                    </div>
+                </div>
+            </div>
         </div>
+      </div>
 
-        <div class="category-about"> 
-          <p> Information </p>
-          <a> Help Center </a>
-          <a> Money Refund </a>
-          <a> Shopping </a>
-          <a> Contact </a>
+      <div class="container-fluid email-container text-center pb-4 pt-4">
+        <div class="email-form-container">
+            <h4 class="title fs-5 ">Subscribe to our news letter</h4>
+            <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+            <div class="input-container d-flex flex-wrap justify-content-center">
+                <input class="form-control" type="text" />
+                <button class="btn btn-primary align-self-end">Subscribe</button>
+            </div>
+            
+        </div>
+      </div>
+
+</div>  
+<div class="footer container ps-0">
+    <div class="section footer-item1">
+        <div class="footer-logo container ">
+            <img src="assets/images/444444 1.png" class="img-fluid" />
+            <p class="mt-4 ">Solution to Your Business is simply DUNISON</p>
+            <div class="icons ">
+                <span><img src="assets/images/facebook.png" class="img-fluid" /></span>
+                <span><img src="assets/images/twitter.png" class="img-fluid" /></span>
+                <span><img src="assets/images/linkedin.png" class="img-fluid" /> </span>
+                <span><img src="assets/images/camera.png" class="img-fluid" /></span>
+                <span><img src="assets/images/video.png" class="img-fluid" /></span>
+            </div>
+        </div>
     </div>
-
-    <div class="category-about"> 
-      <p> For users </p>
-      <a> Login </a>
-      <a> Register </a>
-      <a> Settings </a>
-      <a> My Orders </a>
-</div>
-
-<div class="category-about"> 
-  <p> Get app </p>
-  <a> <img src="svg/appstore.png"/></a>
-  <a> <img src="svg/appstore.png"/> </a>
- 
-</div>
-
+    <div class="section footer-item2">
+        <div class="container">
+            <h3 class="title">About</h3> 
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Find Store</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+        </div>
     </div>
-
+    <div class="section footer-item3">
+        <div class="container">
+            <h3 class="title">Partnership </h3> 
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Find Store</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="section footer-item4">
+        <div class="container">
+            <h3 class="title">Information</h3> 
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Money Refund </a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="section footer-item5">
+        <div class="container">
+            <h3 class="title">For Users</h3> 
+            <ul>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">My Orders</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="section footer-item6">
+        <div class="container">
+            <h3 class="title">About</h3> 
+            <ul>
+                <li><a href="#">Get app</a></li>
+            </ul>
+            <div class="container d-flex flex-column my-2 m-0 p-0">
+                <span class="d-inline-block m-0 p-0 ">
+                    <img src="assets/images/google-play-badge.png" class="img-fluid" style="width: 100px; height: auto;" />
+                </span>
+                <span class="m-0 p-0">
+                    <img src="assets/images/google-play-badge.png" class="img-fluid" style="width: 100px; height: auto;" />
+                </span>
+            </div>
+        </div>
+    </div>
+        
+</div>
+<div class="copyright container-fluid d-flex justify-content-between p-3 px-2">
+    <div class="ps-3">
+        <p>2023 Dunison</p>
+    </div>
+    <div class="pe-3">
+        <span> <img src="svg/US@2x.png"/></span> <span>English</span> <span><select class="border-0" style="background-color: #EFF2F4;"><option></option></select></span>
+    </div>
 </div>
 
-</div>
 
-<footer>
-<div class="final--footer">
-<p>2023 Dunison</p>
-<a class="lang"> <img src="svg/US@2x.png"/> English <img  src="svg/drop.png"/> </a>
-</div>
-
-</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
