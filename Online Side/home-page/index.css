@@ -134,6 +134,7 @@ div.timer-holder div span{
     margin-top: 20px;
     margin-bottom: 0;
 }
+/*
 .product-list-container .row .col{
     border-right: 1px solid #E0E0E0;
     border-bottom: 1px solid #E0E0E0;
@@ -142,13 +143,23 @@ div.timer-holder div span{
 .product-list-container .row:last-child{
     border: none !important;
 }
+*/
+
+.custom-container:hover{
+    margin-top: 10px;
+}
+.addToCartBtn{
+    transition: background-color 0.6s ease;
+}
+.addToCartBtn:hover{
+    background-color: #0D6EFD;
+    color: white !important;
+}
 @media (min-width:767px){
     .product-list-container .row .col{
         border-bottom: 0;
     }
-    div.row .frame:last-child{
-        border-right: #fff !important;
-    }
+    
 
 }
 
@@ -157,12 +168,16 @@ div.timer-holder div span{
         flex: 50%;
         width: 50%;
     }
+    .custom-container{
+        margin-top: 5px;
+    }
 }
 @media (max-width:400px){
     .item{
         flex: 100%;
         width: 100%;
     }
+
 }
 .item{
     display: flex;
@@ -178,8 +193,8 @@ div.timer-holder div span{
     border-right: none;
 }
 .store-text-overlay{
-    top: 30%;
-    left: 25%; 
+    top: 20%;
+    left: 30%; 
 }
 .shop-image{
     filter: brightness(0.5);
@@ -266,6 +281,9 @@ div.timer-holder div span{
     .col .card {
         width: 16rem !important;
     }
+}
+.addToCartBtn{
+    border-radius: 16px;
 }
 img.card-img-top{
     background-repeat: no-repeat;
