@@ -38,7 +38,7 @@
   input[type='search']{
       background: #FFFFFF;
       border: 2px solid #0D6EFD;
-      width: 400px;
+      width: 60%;
       height: 35px; 
       padding: 10px;
       transition: all 0.3s;
@@ -62,7 +62,13 @@
       height: 35px;
       border: none;
   }
-  .header select{
+
+  @media(max-width:600px){
+    input[type='search']{
+        width: 100%;
+    }
+  }
+  select{
       background: #FFFFFF;
       border: 2px solid #0D6EFD;
       height: 35px;
@@ -190,27 +196,25 @@
   }
   
   .grid-1-stars{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-  }
-  
-  .grid-1-stars p{
-      color: #969696;
-      margin-top: 10px;
-  }
-  
-  .stars{
-      padding: 20px;
-      background-color: #F2F2F2;
-      border-radius: 16px;
-      flex-direction: column;
-      display: flex;
-      width: 200px;
-      gap: 20px;
-      cursor: pointer;
-      transition: all 500ms;
-  }
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid-1-stars p{
+    color: #969696;
+    margin-top: 10px;
+}
+
+.stars{
+    padding: 20px;
+    background-color: #F2F2F2;
+    border-radius: 16px;
+    display: flex;
+    gap: 30px;
+}
+
 
   .reveiws-list{
     color: #969696;
@@ -298,9 +302,12 @@
   }
   
   .items-1{
-      padding: 24px;
+      padding: 10px;
       display: flex;
       justify-content: space-between;
+  }
+  .card{
+    border-radius: 13px; 
   }
   
   .items-1 button{
@@ -310,9 +317,11 @@
       background: rgba(227, 150, 74, 0.24);
       border: none;
       border-radius: 8px;
+      margin-bottom: 0;
   }
   
   .items-1-name{
+    margin: 0;
       font-size: 12px;
       color: #969696;
       text-transform: uppercase;
@@ -403,9 +412,6 @@
     }
   
   .footer{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       margin-bottom: 30px;
       margin-top: 50px;
   }
@@ -525,4 +531,37 @@
 .modal form{
     font-size: 16px;
     font-family: 'Poppins';
+}
+
+@media(max-width:600px){
+    .items-1{
+        padding: 14px; 
+
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(min-width:500px) and (max-width:767px){
+    .row .col-md-3 {
+        width: 50%;
+      }
+    .card{
+        width: 13rem !important;
+        height: 22rem !important;
+    }
+}
+@media (max-width:600px){
+    .product-img{
+        width: 70%;
+    }
+    .product-img-holder{
+        text-align: center;
+    }
+    div.card-body{
+        margin: 0;
+    }
 }

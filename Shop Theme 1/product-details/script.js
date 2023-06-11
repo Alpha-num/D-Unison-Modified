@@ -1,3 +1,5 @@
+/*
+
 let  ReviewComments = document.getElementById("stars-1") 
 let ReveiwSection = document.getElementById("reveiws-list-1")
 let Cart_btn = document.getElementById("cart")
@@ -18,3 +20,4 @@ ReviewComments.onmouseleave = () => {
 
 
 
+*/
