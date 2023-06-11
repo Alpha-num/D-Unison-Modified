@@ -9,7 +9,7 @@
 }
 
 body{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .parent-div{
@@ -32,15 +32,24 @@ body{
 }
 .search-container{
     margin-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
 }
 input[type='search']{
     background: #FFFFFF;
     border: 2px solid #0D6EFD;
-    width: 400px;
     height: 35px; 
     padding: 10px;
     transition: all 0.3s;
     border-radius: 4px;
+}
+@media (min-width:767px){
+    input[type='search']{
+        width: 70%;
+    }
+    .search-container{
+        flex-wrap: nowrap;
+    }
 }
 input[type='search']::placeholder{
     font-size: 15px;
@@ -60,7 +69,7 @@ input[type='search']:focus{
     height: 35px;
     border: none;
 }
-.header select{
+select{
     background: #FFFFFF;
     border: 2px solid #0D6EFD;
     height: 35px;
@@ -116,12 +125,10 @@ input[type='search']:focus{
 
 .search-info h1{
     font-family: 'Poppins';
-    font-size: 35px !important;
+    font-size: 48px;
     font-weight: 700;
     color: #000;
 }
-
-
 @media (max-width:600px){
     .search-info h1{
         font-size: 30px;
@@ -131,6 +138,12 @@ input[type='search']:focus{
     }
     .checkout-controls-1{
         margin-right: 10px;
+    }
+    .search-info #shopping-text{
+        font-size: 25px;
+    }
+    .checkout-1 .cart-text{
+        width: 60%;
     }
 }
 
@@ -182,14 +195,6 @@ input[type='search']:focus{
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 50px;
-}
-
-.grid-2{
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 20% 20% 20% 20%;
     justify-content: space-between;
     padding-top: 50px;
 }
@@ -315,34 +320,143 @@ input[type='search']:focus{
     gap: 20px;
 }
 
+.checkout{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-top: 30px;
+}
+
+.checkout-1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 10px;
+    text-align: center;
+
+}
+
+.checkout-1 p{
+    width: 30%;
+}
+
+.checkout-1 button{
+    padding: 12px;
+    font-weight: 600;
+    color: #000000;
+    background-color: #F2F2F2;
+    border: none;
+    font-family: 'Poppins';
+    border-radius: 8px;
+}
+
+.canceled{
+    color: #969696;
+    text-decoration: line-through;
+}
+
+.discounted{
+    color: #E34A4A;
+}
+
+.checkout-2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkout-table{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info{
+    color: #969696;
+}
+
+.total{
+    color: #000;
+}
+
+.coupon{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.coupon input{
+    padding: 5px 10px;
+    font-size: 16px;
+    font-family: 'Poppins';
+    border: 1px solid #969696;
+    outline: none;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.coupon button{
+    padding: 12px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 8px;
+    width: 72px;
+}
+
+.checkout-final{
+    padding: 12px;
+    font-family: 'Poppins';
+    color: #E3964A;
+    border: none;
+    background-color: rgba(227, 150, 74, 0.24);
+    border-radius: 8px;
+}
 
 @media all and (max-width: 668px){
 
     .search-info{
-        background-color: #F2F2F2;
-        margin-top: 30px;
         padding: 20px;
-        display: flex;
-        align-items: center;
         gap: 10px;
-        border-radius: 16px;
     }
-
+    
     .parent-div{
-        background-color: #fff;
         margin-right: 10px;
         margin-left: 10px;
     }
 
-    .grid-1{
-        width: 100%;
+    .checkout{
         display: grid;
-        grid-template-columns: 50% 50%;
-        gap: 2%;
+        grid-template-columns: 100%;
+        margin-top: 30px;
     }
+
+    .checkout-1{
+        text-align: none;
+    }
+
+    .checkout-2{
+        padding: 10px;
+    }
+
 
 }
 
 .items img{
     width: 100%;
+}
+
+@media(min-width:500px) and (max-width:767px){
+    .row .col-md-3 {
+        width: 50%;
+      }
+      div.row-cols-md-4 .col{
+        width: 50%;
+      }
+    .card{
+        width: 13rem !important;
+        height: 24rem !important;
+    }
+}
+.title{
+    font-weight: 700;
 }
