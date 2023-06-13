@@ -4,115 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Upload used product</title>
 </head>
 <body>
-    
-    <div class="parent-div">
-                <div class="head">
-                         <img src="svg/back.png"/>
-                        <img src="svg/logo.png"/>
+    <div class="container-fluid">
+        <div class="ms-2 pt-4">
+            <div>
+                <img src="svg/back.png" class="me-5"/>
+               <img src="svg/logo.png"/>
+            </div>
+        </div>
+        <div class="mt-4 ps-md-5">
+            <p class="py-3"> Upload Used Item </p>
+        </div>
+        <div class="row gx-4 ps-md-5 pe-md-3">
+            <div class="col-md-7">
+              <!--FORM STARTS HERE-->
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Full Name <span class="required">*</span></label>
+                  <input type="text" class="form-control" id="inputEmail4" placeholder="Enter your Full name">
                 </div>
-
-                <!--Main Content grid-->
-                <div class="content">
-                        <div class="first-div">
-                                <p> Upload Used Item </p>
-                                
-                                <div class="input-container">
-                                    <div class="inputs">
-                                        <label for="fullname">Full Name <span class="required"> * </span></label>
-                                        <input type="text" id="fullname" name="fullname" placeholder="enter full name"/>
-                                    </div>
-
-                                    <div class="inputs">
-                                        <label for="Phone-Number">Phone Number <span class="required"> * </span></label>
-                                        <input type="text" id="Phone-Number" name="Phone-Number" placeholder="enter phone number"/>
-                                    </div>
-
-                                    <div class="inputs">
-                                        <label for="product-title">Product Title <span class="required"> * </span></label>
-                                        <input type="text" id="product-title" name="product-title" placeholder="enter product title"/>
-                                    </div>
-
-                                    <div class="inputs">
-                                        <label for="condition">Condition <span class="required"> * </span></label>
-                                        <select id="condition">
-                                                <option> Used </option>
-                                        </select>
-                                    </div>
-
-                                </div>
-
-                                <div class="text-area">
-                                    <label for="condition">Condition <span class="required"> * </span></label>
-                                    <textarea rows="4" cols="50" name="comment" form="usrform" placeholder="Enter Product Description">Enter Product Description</textarea>
-                                   
-                                </div>
-
-                                <div class="input-container">
-                                    <div class="inputs">
-                                        <label for="fullname">State <span class="required"> * </span></label>
-                                        <select id="condition">
-                                            <option> Lagos </option>
-                                            <option> Abuja </option>
-                                    </select>
-                                    </div>
-
-                                    <div class="inputs">
-                                        <label for="postal-code">Postal Code <span class="required"> * </span></label>
-                                        <input type="text" id="postal-code" name="postal-code" placeholder="enter postal code"/>
-                                    </div>
-
-                                    <div class="inputs">
-                                        <label for="email">Email <span class="required"> * </span></label>
-                                        <input type="text" id="Email" name="Email" placeholder=""/>
-                                    </div>
-
-                                    <div class="inputs">
-                                        <label for="product-img">product-img <span class="required"> * </span></label>
-                                        <input type="file" id="product-img" name="product-img" placeholder=""/>
-                                    </div>
-
-                                    <div class="inputs">
-                                        <label for="price">Price <span class="required"> * </span></label>
-                                        <input type="text" id="price" name="price" placeholder=""/>
-                                    </div>
-
-                                    <div class="inputs">
-                                        <label>Product Type <span class="required"> * </span></label>
-                                        <select id="condition">
-                                            <option> Negotiable </option>
-                                            
-                                    </select>
-                                    </div>
-
-                                    <div class="inputs">
-                                        <label for="Tag">Tag <span class="required"> * </span></label>
-                                        <input type="text" id="Tag" name="Tag" placeholder=""/>
-                                    </div>
-
-                                    <div class="submit">
-                                        <a> Submit </a>
-                                    </div>
-
-                                </div>
-
-
-                        </div>
-
-
-                        <div class="second-div">
-                            <img src="svg/big.png"/>
-                        </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Phone Number <span class="required">*</span> </label>
+                  <input type="text" class="form-control" id="inputPassword4" placeholder="Enter Phone number">
                 </div>
-
-
-
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Product Title <span class="required">*</span></label>
+                    <input type="text" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Condition <span class="required">*</span></label>
+                    <input type="text" class="form-control" id="inputPassword4">
+                  </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Condition <span class="required">*</span></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter product description"></textarea>
+                      </div>
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Address 2</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputState" class="form-label">State <span class="required">*</span></label>
+                    <select id="inputState" class="form-select">
+                      <option selected> choose </option>
+                      <option></option>
+                    </select>  
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Postal Code</label>
+                    <input type="text" class="form-control" id="inputPassword4">
+                </div>
                 
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">Email</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Price</label>
+                    <input type="file" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputState" class="form-label">Product type</label>
+                    <select id="inputState" class="form-select">
+                      <option selected> choose </option>
+                      <option></option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Postal Code</label>
+                    <input type="text" class="form-control" id="inputPassword4">
+                </div>
+                
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">Tag</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center h-100 pt-md-4">
+                        <button type="submit" class="btn btn-primary w-100">submit</button>
+                    </div>
+                </div>
+              </form>
+                
+
+              <!--FORM ENDS HERE-->
+            </div>
+            <div class="col-md-5 order-first order-md-last mb-3">
+                <div class="second-div">
+                    <img src="svg/big.png" class="img-fluid"/>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="footer container">
+
+    <div class="footer ps-md-4">
         <div class="item item1">
             <div class="footer-logo container ">
                 <img src="svg/logo.png" class="img-fluid"/>
@@ -128,7 +119,7 @@
         </div>
         <div class="item item2">
             <div class="container">
-                <h3 class="title">About</h3> 
+                <h3 class="title">About</h3>
                 <ul>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Find Store</a></li>
@@ -200,5 +191,6 @@
         
         </footer>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
