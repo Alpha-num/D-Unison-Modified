@@ -85,7 +85,7 @@ li a {
 }
 .footer{
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 @media (max-width:768px){
     .footer{
